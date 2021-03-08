@@ -1,3 +1,4 @@
+[Discussion Post (created on 8/2/2021 at 9:3)](https://leetcode.com/problems/n-queens/discuss/1099058/Python3-backtracking-with-detailed-explanation)  
 <h2>51. N-Queens</h2><h3>Hard</h3><hr><div><p>The <strong>n-queens</strong> puzzle is the problem of placing <code>n</code> queens on an <code>n x n</code> chessboard such that no two queens attack each other.</p>
 
 <p>Given an integer <code>n</code>, return <em>all distinct solutions to the <strong>n-queens puzzle</strong></em>.</p>
