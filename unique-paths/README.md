@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/2/2021 at 10:22)](https://leetcode.com/problems/unique-paths/discuss/1118033/Python3-DP-solution-10-line-faster-than-97)  
 <h2>62. Unique Paths</h2><h3>Medium</h3><hr><div><p>A robot is located at the top-left corner of a <code>m x n</code> grid (marked 'Start' in the diagram below).</p>
 
 <p>The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).</p>
