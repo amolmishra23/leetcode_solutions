@@ -3,13 +3,14 @@
 class Solution {
 public:
     int firstUniqChar(string s) {
-        unordered_map<char, int> m1;
+        vector<int> count(26, 0);
+        
         for (char c: s)
-            m1[c]++;
+            count[c-'a']++;
         
         for (int i=0; i<s.length(); i++)
         {
-            if (m1[s[i]]==1)
+            if (count[s[i]-'a']==1)
             {
                 return i;
             }
