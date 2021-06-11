@@ -1,18 +1,24 @@
 class Solution:
     def calculateMinimumHP(self, arr: List[List[int]]) -> int:
-        def solve(i, j, arr, res):
-            if i>len(arr)-1 or j>len(arr[0])-1: return float('inf')
+        def solve(arr, i, j, dp):
+            # this is the overflow base condition
+            if i>=m or j>=n: return float('inf')
             
-            if (i,j) in res: return res[(i,j)]
+            if (i, j) in dp: return dp[(i, j)]
             
-            next_ = min(solve(i+1, j, arr, res), solve(i, j+1, arr, res))
+            # which is the next cheapest path to traverse. 
+            next_ = min(solve(arr, i+1, j, dp), solve(arr, i, j+1, dp))
             
-            if next_==float('inf'): next_=1
+            # we should have atleast 1 health extra when we reach destination
+            if next_ == float('inf'): next_=1
             
-            temp = max(next_-arr[i][j], 1)
-            res[(i, j)] = temp
-            return temp
+            # example when we reach (2,2) we atleast need 6 health.
+            # 1-(-5) = 1+5 = 6
+            dp[(i, j)] = max(next_-arr[i][j],1)
+            return dp[(i,j)]
+                
         
         if not arr or len(arr)==0 or len(arr[0])==0: return 0
-        res = {}
-        return solve(0, 0, arr, res)
+        m, n = len(arr), len(arr[0])
+        dp = {}
+        return solve(arr, 0, 0, dp)
