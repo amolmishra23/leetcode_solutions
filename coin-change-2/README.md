@@ -1,6 +1,6 @@
 <h2>518. Coin Change 2</h2><h3>Medium</h3><hr><div><p>You are given an integer array <code>coins</code> representing coins of different denominations and an integer <code>amount</code> representing a total amount of money.</p>
 
-<p>Return <em>the number of combinations that make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>-1</code>.</p>
+<p>Return <em>the number of combinations that make up that amount</em>. If that amount of money cannot be made up by any combination of the coins, return <code>0</code>.</p>
 
 <p>You may assume that you have an infinite number of each kind of coin.</p>
 
@@ -37,6 +37,7 @@
 <ul>
 	<li><code>1 &lt;= coins.length &lt;= 300</code></li>
 	<li><code>1 &lt;= coins[i] &lt;= 5000</code></li>
+	<li>All the values of <code>coins</code> are <strong>unique</strong>.</li>
 	<li><code>0 &lt;= amount &lt;= 5000</code></li>
 </ul>
 </div>
