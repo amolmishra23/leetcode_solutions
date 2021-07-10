@@ -1,14 +1,15 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
-        dp = [0]*(len(s)+1)
-        dp[0] = 1
-        dp[1] = 0 if s[0]=="0" else 1
+        @functools.lru_cache(None)
+        def solve(s, i):
+            if i>=len(s): return 1
+            
+            res, c = 0, s[i]
+            
+            if int(c)>0: res += solve(s, i+1)
+                
+            if i+1<len(s) and 10<=int(s[i:i+2])<=26: res+=solve(s, i+2)
+                
+            return res
         
-        for i in range(2, len(s)+1):
-            one_digit = int(s[i-1:i])
-            two_digit = int(s[i-2:i])
-            if one_digit>=1: dp[i]+=dp[i-1]
-            if 10<=two_digit<=26: dp[i]+=dp[i-2]
-        
-        return dp[len(s)]
-        
+        return solve(s, 0)
