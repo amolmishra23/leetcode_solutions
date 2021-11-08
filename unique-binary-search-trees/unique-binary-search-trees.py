@@ -1,5 +1,14 @@
 class Solution:
     def numTrees(self, n: int) -> int:
+        """
+        Tricky question in terms of placement of nodes, in BST can be either ways
+        In fact, if we have 3 nodes, we can generate 5 valid bst's
+        To solve this we use the formula called catalan number. 
+        
+        If we are generating a bst with 7 nodes, and 3 is chosen as one of the roots. 
+        Left subtree will have 2 nodes and right subtree with have 4 nodes. So again, we can recursively answer this question.
+        """
+        
         G = [0]*(n+1)
         # tree with 0 or 1 nodes, only 1 tree can be constructed. 
         G[0]=G[1]=1
