@@ -4,9 +4,10 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        head = ListNode(0)
-        curr, carry = head, 0
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        temp_node = ListNode(None)
+        copy_temp_node = temp_node
+        carry = 0
         
         while l1 or l2:
             if l1:
@@ -15,11 +16,11 @@ class Solution:
             if l2:
                 carry += l2.val
                 l2 = l2.next
+                
             carry, r = divmod(carry, 10)
-            curr.next = ListNode(r)
-            curr = curr.next
+            temp_node.next = ListNode(r)
+            temp_node = temp_node.next
             
+        if carry: temp_node.next = ListNode(carry)
         
-        if carry: curr.next = ListNode(1)
-        
-        return head.next
+        return copy_temp_node.next
