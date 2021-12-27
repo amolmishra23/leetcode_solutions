@@ -4,6 +4,13 @@ class Solution:
     """
     @functools.lru_cache(None)
     def solve(self, pos, restricted, s):
+        """
+        No shortcut here. Should traverse till the end of all numbers. 
+        And After traversing calculate if we have prime number of 1s or not.
+        And then decide accordingly
+        
+        Just the digit dp is smart enough to figure which path to opt, in trie. 
+        """
         if pos>=len(self.num):
             return 1 if s in self.primes else 0
         
