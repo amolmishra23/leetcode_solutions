@@ -1,7 +1,5 @@
 class Solution {
-    
 public:
-    // A hash function used to hash a pair of any kind
     int t[550][550];
     
     int solve(vector<int>& nums, int i, int j) {
@@ -9,22 +7,19 @@ public:
             return t[i][j];
         }
         
-        if (i>=j){
+        if (i>=j) {
             return 0;
         }
         
-        int max_ = 0;
+        int res = 0;
         
-        for (int k=i; k<=j-1; k++) {
-            int a = solve(nums, i, k);
-            int b = solve(nums, k+1, j);
-            int c = nums[i-1]*nums[k]*nums[j];
-            
-            max_ = max(max_, a+b+c);
+        for (int k=i; k<j; k++) {
+            res = max(res, 
+                      solve(nums, i, k) + solve(nums, k+1, j)+ nums[i-1]*nums[k]*nums[j]);
         }
         
-        t[i][j] = max_;
-        return t[i][j];
+        t[i][j] = res;
+        return res;
     }
     
     int maxCoins(vector<int>& nums) {
