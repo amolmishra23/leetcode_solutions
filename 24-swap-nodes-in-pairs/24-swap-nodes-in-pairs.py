@@ -9,9 +9,7 @@ class Solution:
         
         def rev_k_nodes(node, k):
             curr = node
-            # curr now will be traversed the last node in linkedlist. 
-            # hence we store it as new_tail
-            prev, new_tail = None, curr
+            prev, new_tail = None, node
             
             for _ in range(k):
                 if curr:
@@ -21,23 +19,24 @@ class Solution:
                     curr = next_
                 else:
                     break
-            
-            # curr is next node to traverse
-            # prev is the new head of the LL
-            # new_tail is the new last node of the LL
+                    
+            # curr is next eleme
+            # prev is the new head
+            # tail is the new tail
             return curr, prev, new_tail
         
-        
-        k = 2
+        k=2
         curr = head
         dummy = prev = ListNode(None, head)
         
         while curr:
             next_, new_head, new_tail = rev_k_nodes(curr, k)
-            new_tail.next = next_
             prev.next = new_head
+            new_tail.next = next_
             prev = new_tail
             curr = next_
             
         prev.next = curr
         return dummy.next
+            
+        
