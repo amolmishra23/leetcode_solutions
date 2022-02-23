@@ -9,7 +9,8 @@ class Solution:
         
         def palindrome_part(i, parts, curr_part):
             if i == len(s): #if parsed the entire string append the current partition list to answer
-                parts.append(curr_part)
+                parts.append(list(curr_part))
+                return 
             
             for j in range(i, len(s)): #try all strings starting at i and ending at j where j = (i, len(s))
                 if is_palindrome(i, j): #if the substring is palindrome then
