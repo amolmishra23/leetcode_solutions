@@ -1,42 +1,28 @@
-class Solution:
+class Solution:  # 44 ms, faster than 86.16%
     def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
-        if not endWord or not beginWord or not wordList or endWord not in wordList \
-		or beginWord == endWord:
-            return []
+        wordSet = set(wordList)  # to check if a word is existed in the wordSet, in O(1)
+        wordSet.discard(beginWord)
 
-        L = len(beginWord)
+        def neighbors(word):
+            words = []
+            for i in range(len(word)):  # change every possible single letters and check if it's in wordSet
+                for c in ascii_lowercase:
+                    newWord = word[:i] + c + word[i + 1:]
+                    if newWord in wordSet:
+                        words.append(newWord)
+            return words
 
-        # Dictionary to hold combination of words that can be formed,
-        # from any given word. By changing one letter at a time.
-        """
-        "*ot" => hot, dot, lot
-        """
-        all_combo_dict = collections.defaultdict(list)
-        for word in wordList:
-            for i in range(L):
-                all_combo_dict[word[:i] + "*" + word[i+1:]].append(word)
+        level = {}
+        level[beginWord] = [[beginWord]]  # level[word] is all possible sequence paths which start from beginWord and end at `word`.
+        while level:
+            nextLevel = defaultdict(list)
+            for word, paths in level.items():
+                if word == endWord:
+                    return paths  # return all shortest sequence paths
+                for nei in neighbors(word):
+                    for path in paths:
+                        nextLevel[nei].append(path + [nei])  # form new paths with `nei` word at the end
+            wordSet -= set(nextLevel.keys())  # remove visited words to prevent loops
+            level = nextLevel  # move to new level
 
-        # Shortest path, BFS
-        ans = []
-        queue = collections.deque()
-        queue.append((beginWord, [beginWord]))
-        visited = set([beginWord])
-
-        # Only iterate until ans is empty. Because thats the level nearest transformation
-        while queue and not ans:
-            length = len(queue)
-            localVisited = set()
-            for _ in range(length):
-                word, path = queue.popleft()
-                for i in range(L):
-                    # Checking only all the possible combinations,
-                    for nextWord in all_combo_dict[word[:i] + "*" + word[i+1:]]:
-                        if nextWord == endWord:
-                            ans.append(path+[endWord])
-                        # if we havent yet visited the node already, mark it as visited. 
-                        if nextWord not in visited:
-                            localVisited.add(nextWord)
-                            queue.append((nextWord, path+[nextWord]))
-            # after level is done, we marked all the local level visited nodes, in visited. 
-            visited = visited.union(localVisited)
-        return ans
+        return []
