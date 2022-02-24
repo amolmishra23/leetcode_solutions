@@ -1,25 +1,31 @@
 class Solution:
-    def fractionToDecimal(self, n: int, d: int) -> str:
-        res = ""
-        if (n > 0 and d<0) or (n<0 and d>0): res += "-"
-        
-        dvd, dvs = abs(n), abs(d)
-        res += str(dvd//dvs)
-        
-        dvd %= dvs
-        if dvd: res += "."
-        
-        lookup = {}
-        
-        while dvd and dvd not in lookup:
-            # we store the last len of result, where we spotted this particular rem
-            lookup[dvd] = len(res)
-            # Before doing calculations, multiply by 10(similar to carry step in division)
-            dvd*=10
-            res += str(dvd//dvs)
-            dvd %= dvs
-        
-        if dvd in lookup: res = res[:lookup[dvd]] + "(" + res[lookup[dvd]:] + ")"
-            
-        return res
-        
+  def fractionToDecimal(self, numerator: int, denominator: int) -> str:
+    if numerator == 0:
+      return '0'
+
+    ans = ''
+
+    if (numerator < 0) ^ (denominator < 0):
+      ans += '-'
+
+    numerator = abs(numerator)
+    denominator = abs(denominator)
+    ans += str(numerator // denominator)
+
+    if numerator % denominator == 0:
+      return ans
+
+    ans += '.'
+    dict = {}
+
+    remainder = numerator % denominator
+    while remainder:
+      if remainder in dict:
+        ans = ans[:dict[remainder]] + '(' + ans[dict[remainder]:] + ')'
+        break
+      dict[remainder] = len(ans)
+      remainder *= 10
+      ans += str(remainder // denominator)
+      remainder %= denominator
+
+    return ans
