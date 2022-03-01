@@ -1,4 +1,7 @@
 class Solution:
+    """
+    Same solution as https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
+    """
     @functools.lru_cache(None)
     def backtrack(self, target_sum, target_part, visited, curr_idx, curr_sum):
         # anyways only one part is left now. So definitely we are successful in splitting it. 
