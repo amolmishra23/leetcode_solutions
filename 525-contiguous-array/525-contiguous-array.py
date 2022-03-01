@@ -5,19 +5,19 @@ class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
         # we initialize 0 to -1, to get the subarray length properly.
         # from index 2 to beginning of array, we have a length of 3. 
-        count, curr={0: -1}, 0
+        last_occ, curr={0: -1}, 0
         res = 0
         
         for i in range(len(nums)):
             if nums[i]==0: curr-=1
             else: curr+=1
             
-            if curr in count:
-                res = max(res, i-count[curr])
+            if curr in last_occ:
+                res = max(res, i-last_occ[curr])
             else:
                 # storing previously occured index for curr sum.
                 # to solve it in prefix sum fashion. 
-                count[curr] = i
+                last_occ[curr] = i
         
         return res
             
