@@ -5,6 +5,10 @@ class Solution:
         n = len(s)
         
         for i in range(n):
+            """
+            Starting at every index in the string
+            We try to count number of odd length and even length palindrome substring. 
+            """
             self.solve(s, i, i)
             self.solve(s, i, i+1)
             
