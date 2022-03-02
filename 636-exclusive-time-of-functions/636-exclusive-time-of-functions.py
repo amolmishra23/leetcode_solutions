@@ -1,18 +1,20 @@
 class Solution:
     def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:
-        stk = []
         res = [0]*n
-        prev = 0
+        stk = []
+        prev = None
         
         for log in logs:
-            tokens = log.split(':')
-            if tokens[1] == "start":
+            a,b,c = log.split(":")
+            a,c = int(a),int(c)
+            
+            if b=="start":
                 if stk:
-                    res[stk[-1]] += int(tokens[2]) - prev
-                stk.append(int(tokens[0]))
-                prev = int(tokens[2])
+                    res[stk[-1]] += c-prev
+                stk.append(a)
+                prev = c
             else:
-                res[stk.pop()] += int(tokens[2])-prev+1
-                prev = int(tokens[2])+1
-        
-        return res
+                res[stk.pop()] += c-prev+1
+                prev = c+1
+                
+        return res 
