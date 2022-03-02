@@ -6,14 +6,14 @@ class Solution:
         :type x: int
         :rtype: List[int]
         """
-        arr = [-float('inf')] + arr + [float('inf')]
-        idx = bisect.bisect(arr,x)
-        i, j = idx-1, idx
+        idx = bisect.bisect_left(arr, x) 
         
-        while True:
-            if abs(arr[i]-x) <= abs(arr[j]-x):
-                i -= 1
+        left, right = max(0, idx - k), min(idx + k, len(arr) - 1)
+
+        while right - left + 1 > k: 
+            if x - arr[left] > arr[right] - x: 
+                left += 1
             else:
-                j += 1
-            if j-i == k+1:
-                return arr[i+1:j]
+                right -= 1
+        
+        return arr[left: right + 1]
