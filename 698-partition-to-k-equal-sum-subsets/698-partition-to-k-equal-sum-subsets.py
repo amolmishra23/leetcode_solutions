@@ -18,7 +18,6 @@ class Solution:
         
         for i in range(curr_idx, len(self.nums)):
             # if number is already visited, or this number is bigger than our target sum just continue
-            visited & (1<<i)
             if visited & (1<<i) or curr_sum+self.nums[i] > target_sum: continue
             
             # adding curr number as visited. 
