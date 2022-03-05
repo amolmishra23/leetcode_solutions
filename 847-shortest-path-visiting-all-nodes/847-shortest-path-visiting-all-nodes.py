@@ -15,16 +15,17 @@ class Solution:
         res = 0
         
         while True:
-          nxt = []
-          for u, mask in level:
-            if mask==goal:
-              return res
-            for v in graph[u]:
-              n_tup = (v, mask | (1<<v))
-              if n_tup not in seen:
-                nxt.append(n_tup)
-                seen.add(n_tup)
-          res += 1
-          level = nxt
-          
-        
+            nxt = []
+            
+            for u,mask in level:
+                if mask==goal: return res
+                for v in graph[u]:
+                    new_tup = (v, mask | 1<<v)
+                    if new_tup not in seen:
+                        nxt.append(new_tup)
+                        seen.add(new_tup)
+            
+            res += 1
+            level = nxt
+            
+            
