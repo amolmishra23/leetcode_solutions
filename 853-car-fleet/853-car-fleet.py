@@ -9,6 +9,8 @@ class Solution:
         In the end number of such cars in the stack is the result. 
         """
         stack = []
+        # we will have strictly increasing stack
+        # if we midway find anything smaller than curr top in stack, we ignore adding it to stack
         for pos, vel in sorted(zip(position, speed))[::-1]:
             dist = target - pos
             if not stack:
