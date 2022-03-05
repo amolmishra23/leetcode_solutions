@@ -1,3 +1,9 @@
 class Solution:
-    def bitwiseComplement(self, num: int) -> int:
-        return int(''.join(['1' if x=='0' else '0' for x in bin(num)[2:]]), 2)
+    def bitwiseComplement(self, n: int) -> int:
+        if not n: return 1
+        mask = 0
+        temp = n
+        while temp:
+            mask = (mask << 1) | 1
+            temp >>= 1
+        return n ^ mask
