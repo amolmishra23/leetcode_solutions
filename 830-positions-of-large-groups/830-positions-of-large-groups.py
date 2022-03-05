@@ -8,6 +8,11 @@ class Solution(object):
         res = []
         n = len(s)
         for i in range(n):
+            """
+            At curr index we keep checking if next index is same
+            If yes, we keep incrementing the counter variable.
+            If no, we append the compressed thing. 
+            """
             if i<n-1 and s[i]==s[i+1]: counter+=1
             else:
                 if counter>=3: 
