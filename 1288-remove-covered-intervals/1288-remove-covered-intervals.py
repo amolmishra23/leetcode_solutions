@@ -12,6 +12,10 @@ class Solution:
         
         res, ending = 0, 0
         
+        # intervals are sorted first by start time
+        # if 2 intervals with same start time, we sort by ending time in descending order
+        # if curr interval ending is bigger than prev ending, its new interval
+        # otherwise we are good to skip it. 
         for _, end in intervals:
             if end > ending:
                 res += 1
