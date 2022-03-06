@@ -3,6 +3,8 @@ class Solution:
         m, n = len(matrix), len(matrix[0])
         res = []
         
+        # finding min most element each row wise
+        # finding max most element each col wise
         row = list(map(min, matrix))
         col = list(map(max, zip(*matrix)))
         
