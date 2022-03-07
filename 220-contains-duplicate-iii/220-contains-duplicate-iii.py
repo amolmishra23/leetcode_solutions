@@ -1,23 +1,15 @@
-import sortedcontainers
 import bisect
+
 class Solution:
-    def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
-        
-        k+=1
-        temp = sortedcontainers.SortedList(nums[:k])
-        for i in range(1,len(temp)):
-            if temp[i]-temp[i-1] <= t :
-                return True
-        
-        
-        for i in range(1,len(nums)-k+1):
+    def containsNearbyAlmostDuplicate(self, nums, k, t):
+        SList = []
+        for i in range(len(nums)):
+            if i > k: del SList[bisect.bisect_left(SList, nums[i-k-1])]   
+            pos1 = bisect.bisect_left(SList, nums[i] - t)
+            pos2 = bisect.bisect_right(SList, nums[i] + t)
             
-            num = nums[i+k-1]
-            temp.remove(nums[i-1])
-            temp.add(nums[i+k-1])
-            idx = bisect.bisect_left(temp, num)
+            if pos1 != pos2: return True
             
-            if (idx-1 >= 0 and num-temp[idx-1]<=t) or (idx+1<k and temp[idx+1]-num<=t):
-                return True
-            
+            bisect.insort(SList, nums[i])
+        
         return False
