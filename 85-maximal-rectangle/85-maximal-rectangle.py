@@ -38,11 +38,15 @@ class Solution:
         right = self.nearest_smallest_right(heights) 
         widths = []
         
+        # widths give us an idea, how wide can we spread the thing? 
         for l,r in zip(left, right):
             widths.append(r-l-1)
         max_area = 0
+        
+        # height is anyways given in question. So now we can find the area of rectangle.
         for h, w in zip(heights, widths):
             max_area = max(max_area, h*w)
+            
         return max_area
     
     def maximalRectangle(self, matrix: List[List[str]]) -> int:
@@ -52,6 +56,8 @@ class Solution:
         heights = [0]*n
         max_area = 0
         
+        # finding heights in the prefix sum way
+        # and this will inturn be used to find the largest rectangle area. 
         for i in range(m):
             for j in range(n):
                 heights[j] = heights[j]+1 if matrix[i][j]=="1" else 0
