@@ -17,9 +17,17 @@ class Solution:
         q, res = collections.deque(), float('-inf')
         
         for i, (x, y) in enumerate(points):
+            # getting rid of all such points from front, whose x diff to curr point x coordinate, is greater than k.
+            # because front of queue contains max element anyways, we pop it from left
             while q and abs(x - points[q[0]][0])>k: q.popleft()
+            
+            # finding our actual answer, with the point avlb in queue. 
             if q: res = max(res, x+y+points[q[0]][1]-points[q[0]][0])
+                
+            # doing the sliding window trick, to only keep monotonic decreasing queue. 
             while q and points[q[-1]][1]-points[q[-1]][0] < y-x: q.pop()
+                
+            # appending curr element to queue. 
             q.append(i)
             
         return res
