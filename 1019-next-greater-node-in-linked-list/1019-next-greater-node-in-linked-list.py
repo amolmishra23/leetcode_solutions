@@ -19,6 +19,8 @@ class Solution:
             while stk and stk[-1][1]<head.val: # as soon as we find a bigger element, we replace next bigger element for all previous elements in the stack
                 result[stk.pop()[0]] = head.val
             stk.append([len(result), head.val]) # alias to i or counter variable here
+            # creating placeholder for curr element's next greater
+            # it would later be replaced at the len(result) index
             result.append(0)
             head = head.next
         
