@@ -27,16 +27,25 @@ class Solution:
         min_list = [None]*len(nums)
         min_list[0] = nums[0]
         
+        # Minimum before the index i. Not including i. 
+        # this array is useful in calculating ith index. 
         for i in range(1, len(nums)):
             min_list[i] = min(min_list[i-1], nums[i-1])
             
         stack, n = [], len(nums)
         
+        
         for j in range(n-1, -1, -1):
             if nums[j] > min_list[j]:
+                # for finding the kth element, we have no use of elements smaller than ith idx element
+                # so pop all the elements, smaller than ith index. 
                 while stack and stack[-1] <= min_list[j]:
                     stack.pop()
+                # top elem of stack is now used as kth element. Just making sure its smaller than jth element.
                 if stack and stack[-1] < nums[j]:
+                    # we have satisfied condition of 132 pattern. return true. 
                     return True
+                #else keep adding it to the monotic decreasing stack. 
                 stack.append(nums[j])           
+        
         return False
