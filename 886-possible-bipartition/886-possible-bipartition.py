@@ -9,8 +9,15 @@ class Solution:
         color = {}
         
         def dfs(node, c=0):
-            if node in color: return color[node]==c
+            if node in color: 
+                return color[node]==c
             color[node]=c
-            return all(dfs(neigh, c^1) for neigh in graph[node])
+            for neigh in graph[node]:
+                if not dfs(neigh, c^1): return False
+            return True
         
-        return all(dfs(node) for node in range(1, n+1) if node not in color)
+        for node in range(1, n+1):
+            if node not in color:
+                if not dfs(node): return False
+                
+        return True
