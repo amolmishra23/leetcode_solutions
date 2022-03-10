@@ -13,6 +13,9 @@ class Solution:
         ]
         lookup, res = {(i, j) for i, j in queens}, []
         
+        # we have 8 possible directions
+        # each direction we can keep increasing by 1 to 8 units max
+        # if while expanding, we find a potential queen in our lookup, we can return off. 
         for dx, dy in dirs:
             for i in range(8):
                 x, y = king[0]+dx*i, king[1]+dy*i
