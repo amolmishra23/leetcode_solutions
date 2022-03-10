@@ -1,22 +1,26 @@
 class Solution:
-    def shortestPath(self, grid, k):
+    def shortestPath(self, grid: List[List[int]], k: int) -> int:
         m, n = len(grid), len(grid[0])
-        # start, x, y, k
-        Q, v = deque([(0, 0, 0, k)]), set()
+        if k >= m + n - 2: return m + n - 2  # if we can go by manhattan distance -> let's go
         
-        # if k is bigger than total nodes
-        if k >= m + n - 2: return m + n - 2
-        
-        # Performing BFS
-        while Q:
-            steps, x, y, k = Q.popleft()
-            if (x, y) == (n-1, m-1): return steps
-            
-            for dx, dy in (x, y-1), (x, y+1), (x-1, y), (x+1, y):
-                if 0 <= dx < n and 0 <= dy < m and k - grid[dy][dx] >= 0:
-                    new = (dx, dy, k - grid[dy][dx])
-                    if new not in v:
-                        v.add(new)
-                        Q.append((steps + 1, *new))
-            
+        DIR = [0, 1, 0, -1, 0]
+        q = deque([(0, 0, k)])  # pair of (r, c)
+        seen = set()
+        seen.add((0, 0, k))
+        step = 0
+        while q:
+            for _ in range(len(q)):
+                r, c, k = q.popleft()
+                if r == m - 1 and c == n - 1: return step  # Reach to the bottom right cell
+                for i in range(4):
+                    nr, nc = r + DIR[i], c + DIR[i + 1]
+                    if nr < 0 or nr == m or nc < 0 or nc == n: continue  # Skip out of bound cells!
+                    newK = k - grid[nr][nc]
+                    newState = (nr, nc, newK)
+                    if newK >= 0 and newState not in seen:
+                        seen.add(newState)
+                        q.append(newState)
+
+            step += 1
+
         return -1
