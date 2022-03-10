@@ -11,8 +11,11 @@ class Solution:
             ans = dp(i + 1)  # Choice 1: Don't pick
 
             # doing this job, and finding the next best job to do
+            # after the current job ends at job[i][1], we need to find next best start time.
             j = bisect_left(startTime, jobs[i][1])
-            # now adding profit of the current task, and doing it again from dp(j), whose start doesnt collide with our end
+            
+            # now adding profit of the current task, and doing it again from dp(j)
+            # whose start doesnt collide with our end
             ans = max(ans, dp(j) + jobs[i][2])  # Choice 2: Pick
             return ans
 
