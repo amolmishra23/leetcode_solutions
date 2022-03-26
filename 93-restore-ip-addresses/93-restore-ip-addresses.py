@@ -1,23 +1,25 @@
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
-        def solve(s, curr, res, idx, segments):
-            if idx == len(s) and segments==4: res.append(".".join(curr)); return
-            elif idx == len(s) or segments==4: return 
+        n = len(s)
+        def solve(idx, curr):
+            if idx==n and len(curr)==4: 
+                self.res.append(".".join(curr))
+                return
+            if idx==n or len(curr)==4:
+                return 
+            
             
             for curr_len in range(1, 4):
-                if idx+curr_len>len(s): break
+                if idx+curr_len > n: break
                 
-                str_val = s[idx:idx+curr_len]
-                val = int(str_val)
+                curr_str = s[idx:idx+curr_len]
                 
-                if val>255 or (curr_len>=2 and str_val[0]=="0"): break
+                if int(curr_str)>255 or (curr_len>1 and s[idx]=="0"): break
                 
-                curr.append(str_val)
-                solve(s, curr, res, idx+curr_len, segments+1)
+                curr.append(curr_str)
+                solve(idx+curr_len, curr)
                 curr.pop()
                 
-        
-        res = []
-        solve(s, [], res, 0, 0)
-        return res
-        
+        self.res = []
+        solve(0, [])
+        return self.res
