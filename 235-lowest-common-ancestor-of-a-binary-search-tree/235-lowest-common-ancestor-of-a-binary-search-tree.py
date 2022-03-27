@@ -16,9 +16,12 @@ class Solution(object):
         def solve(root, p, q):
             if root is None: return None
             
+            # if root lies between p and q, we can return root.
             if p<=root.val<=q: return root
             
+            # if max of it lies in left of root. We iterate over the left side
             if max(p, q)<=root.val: return solve(root.left, p, q)
+            # else we go on the right side. 
             else: return solve(root.right, p, q)
 
         p, q = sorted([p.val, q.val])
