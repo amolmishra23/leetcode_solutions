@@ -9,8 +9,13 @@ class Solution(object):
         
         max_area = float('-inf')
         
-        while i<j:    
+        while i<j: 
+            # at every index we find the curr area.
+            # width is distance of the 2 pointers
+            # height is minimum of the 2 given heights
             curr_area = (j-i)*min(height[i], height[j])
+            
+            # updating the max area
             max_area = max(max_area, curr_area)
             if height[i]<height[j]: i+=1
             else: j-=1
