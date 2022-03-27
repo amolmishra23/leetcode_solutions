@@ -15,7 +15,7 @@ class Solution:
                 solve(op-1, cl, n, curr, res)
                 curr.pop()
                 
-            if op<n and op<cl:
+            if op<cl:
                 curr.append(")")
                 solve(op, cl-1, n, curr, res)
                 curr.pop()
