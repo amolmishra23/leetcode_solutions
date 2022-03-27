@@ -1,16 +1,12 @@
-class Solution(object):
-    def PredictTheWinner(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: bool
-        """
-        dp = {}
-
-        def find(i, j):
-            if (i, j) not in dp:
-                if i == j:
-                    return nums[i]
-                dp[i,j] = max(nums[i]-find(i+1, j), nums[j]-find(i, j-1))
-            return dp[i,j]
-
-        return find(0, len(nums)-1) >= 0
+class Solution:
+    def PredictTheWinner(self, nums: List[int]) -> bool:
+        @lru_cache(None)
+        def helper(s, e):
+            if s==e: return nums[s]
+            
+            front_picked = nums[s] - helper(s+1, e)
+            back_picked = nums[e] - helper(s, e-1)
+            
+            return max(front_picked, back_picked)
+        
+        return helper(0, len(nums)-1) >= 0
