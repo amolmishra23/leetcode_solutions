@@ -6,18 +6,17 @@
 #         self.right = right
 class Solution:
     def generateTrees(self, n: int) -> List[Optional[TreeNode]]:
-        def solve(first, last):
-          
-          res = [] 
-          
-          for root in range(first, last+1):
-            for left in solve(first, root-1):
-              for right in solve(root+1, last):
-                node = TreeNode(root)
-                node.left = left
-                node.right = right
-                res.append(node)
-                
-          return res or [None]
+        def generateTreesHelper(start, end):
+            result = []
+            
+            for root in range(start, end+1):
+                for left in generateTreesHelper(start, root-1):
+                    for right in generateTreesHelper(root+1, end):
+                        node = TreeNode(root)
+                        node.left = left
+                        node.right = right
+                        result.append(node)
+                        
+            return result or [None]
         
-        return solve(1, n)
+        return generateTreesHelper(1, n)
