@@ -1,60 +1,48 @@
 class Solution:
-    def shortestBridge(self, A: List[List[int]]) -> int:
-        
+    def shortestBridge(self, grid: List[List[int]]) -> int:
         found = False
-        stack = []
-        n, m = len(A), len(A[0])
-        # -----------
-        # find the first island
-        # -----------
-        for i in range(n):
-            for j in range(m):
-                if A[i][j]:
-                    # -----------
-                    # using depth first search to find all connected ('1') locations, since we already know there are only two islands. so we only need to find the first one 
-                    # -----------
-                    self.dfs(A, i, j, n, m, stack)
+        m, n = len(grid), len(grid[0])
+        queue = deque()
+        dirs = [(1,0), (-1,0),(0,1),(0,-1)]
+        
+        isvalid = lambda i,j: 0<=i<m and 0<=j<n and grid[i][j]==1
+        
+        def dfs(i, j):
+            nonlocal queue
+            if isvalid(i, j):
+                grid[i][j]=2
+                
+                queue.append((i, j))
+                
+                for x,y in dirs:
+                    dfs(i+x, j+y)
+                
+        for i in range(m):
+            for j in range(n):
+                if grid[i][j]:
+                    dfs(i, j)
                     found = True
                     break
-            if found:
-                break
-        steps = 0
-        # -----------
-        # breadth first search, once we find next '1', that is our final answer 
-        # -----------
-        dirs = [(0, 1), (0, -1), (1, 0), (-1, 0)]
-        while stack:
-            size = len(stack)
-            level = []
-            while(size):
-                temp = stack.pop()
-                size-=1
-                x, y = temp[0], temp[1]
-                for dx, dy in dirs:
-                    tx = x+dx
-                    ty = y+dy
-                    if tx<0 or ty<0 or tx>=n or ty>=m or A[tx][ty]==2:
-                        continue
-                    if A[tx][ty]==1:
-                        return steps
-                    A[tx][ty]=2
-                    level.append((tx, ty))
-            steps+=1
-            stack = level
-        return -1 
+            if found: break
                 
-    def dfs(self, A, row, col, n, m, stack):
-        # -----------
-        # we only need to find connected '1's. that's why we need A[row][col]==1
-        # -----------
-        if row<0 or col<0 or row>=n or col>=m or A[row][col]!=1:
-            return 
-        A[row][col]=2
-        # -----------
-        # use stack for breath first search
-        # -----------
-        stack.append((row, col))
-        self.dfs(A, row+1, col, n, m, stack)
-        self.dfs(A, row-1, col, n, m, stack)
-        self.dfs(A, row, col+1, n, m, stack)
-        self.dfs(A, row, col-1, n, m, stack)
+        level = 0
+        
+        while queue:
+            curr_count = len(queue)
+            
+            for _ in range(curr_count):
+                x,y = queue.popleft()
+                
+                for dx,dy in dirs:
+                    nx, ny = x+dx, y+dy
+                    
+                    if not 0<=nx<m or not 0<=ny<n or grid[nx][ny]==2: continue
+                        
+                    if grid[nx][ny]==1: return level
+
+                    grid[nx][ny]=2
+                    queue.append((nx,ny))
+            level += 1
+            
+        return -1
+                        
