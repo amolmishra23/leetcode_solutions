@@ -5,10 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-from collections import namedtuple
-
 class Solution(object):
-    
     def lowestCommonAncestor(self, root, p, q):
         """
         :type root: TreeNode
@@ -16,18 +13,17 @@ class Solution(object):
         :type q: TreeNode
         :rtype: TreeNode
         """
-        Status = collections.namedtuple("Status", ("count", "node"))
-        
         def solve(root, p, q):
-            if root is None: return Status(0, None)
+            if root is None: return None
 
-            left_result = solve(root.left, p, q)
-            if left_result.count==2: return left_result
+            if root.val in [p.val, q.val]: return root
 
-            right_result = solve(root.right, p, q)
-            if right_result.count==2: return right_result
+            left = solve(root.left, p, q)
+            right = solve(root.right, p, q)
+
+            if left is not None and right is not None: return root
+
+            return left or right
+
+        return solve(root, p, q)
         
-            matched_nodes = left_result.count+right_result.count+int(root is p)+int(root is q)
-            return Status(matched_nodes, root if matched_nodes==2 else None)
-        
-        return solve(root, p, q).node
