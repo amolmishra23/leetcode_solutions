@@ -11,17 +11,17 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
-        def solve(node, k):
+        def solve(node):
             if node is None: return 0
             
-            left_val = solve(node.left, self.k)
+            left_val = solve(node.left)
             if left_val!=0: return left_val
             
             self.k -= 1
             if self.k==0: return node.val
             
-            right_val = solve(node.right, self.k)
+            right_val = solve(node.right)
             return right_val
         
         self.k = k
-        return solve(root, k)
+        return solve(root)
