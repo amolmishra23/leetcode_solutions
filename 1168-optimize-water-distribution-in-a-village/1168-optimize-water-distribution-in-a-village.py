@@ -1,27 +1,25 @@
 class Solution:
-    """    
-    def minCostToSupplyWater(self, n: int, wells: List[int], pipes: List[List[int]]) -> int:
+    def minCostToSupplyWater1(self, n: int, wells: List[int], pipes: List[List[int]]) -> int:
         seen, cost = set(), 0
         graph = defaultdict(dict)
         
-        for x, y, c in pipes:
+        for x,y,c in pipes:
             graph[x][y] = graph[y][x] = min(graph[x].get(y, float('inf')), c)
-        
+            
         queue = []
-        for home, cost in enumerate(wells, 1): heapq.heappush(queue,(cost, home))
-        
-        res = 0
+        for i, well in enumerate(wells, 1):
+            heapq.heappush(queue, (well, i))
+            
         while queue and len(seen)<n:
             c, x = heapq.heappop(queue)
             if x not in seen:
                 seen.add(x)
-                res += c
+                cost += c
                 for y,c in graph[x].items():
                     if y not in seen:
-                        heapq.heappush(queue, (c,y))
-                        
-        return res
-    """
+                        heapq.heappush(queue, (c, y))
+        
+        return cost
     
     def minCostToSupplyWater(self, n, wells, pipes):
         p = list(range(n+1))
@@ -39,6 +37,9 @@ class Solution:
             return False
 
         cost, undone = 0, n
+        
+        # adding imaginary 0 node. 0 to ith node, cost of setting welling is w. 
+        # so we either set up well. Or traverse to that node. 
         for u, v, w in sorted([[0,i,w] for i, w in enumerate(wells,1)] + pipes, key=lambda x:x[2]):
             if union(u, v):
                 cost += w
