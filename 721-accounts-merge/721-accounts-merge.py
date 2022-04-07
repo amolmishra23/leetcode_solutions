@@ -9,33 +9,31 @@ class UF:
     
     def union(self, a, b):
         self.parents[self.find(a)] = self.find(b)
-    
+
 class Solution:
     def accountsMerge(self, accounts: List[List[str]]) -> List[List[str]]:
         uf = UF(len(accounts))
         
-        # contains the union-find mappings of the emails
-        ownership={}
+        owner = {}
         
-        """
-        In simple words, it contains the mapping of email to idx where it occured
-        In addition for common emails, we also end up doing union find.
-        So we know, 1 idx also belongs to 0 idx. 
-        """
+        # 1. try to find the graph relations using previously occured email.
+        # and add them in the union find. 
         for i, (_, *emails) in enumerate(accounts):
             for email in emails:
-                if email in ownership:
-                    uf.union(i, ownership[email])            
-                ownership[email]=i
+                if email in owner:
+                    uf.union(i, owner[email])
+                else:
+                    owner[email] = i
                 
         ans = defaultdict(list)
         
-        """
-        Merging our inferences from union find. 
-        """
-        for email, owner in ownership.items():
-            ans[uf.find(owner)].append(email)
+        # Now create a map of owner to email. 
+        # this could be done using union-find, and add similar emails in the owner to email. 
+        for email, o in owner.items():
+            ans[uf.find(o)].append(email)
             
+        # finally, we make the result list, where 1st element is owner name, and rest entries are owner emails(which we figured using union-find)
         return [
             [accounts[i][0]] + sorted(emails) for i, emails in ans.items()
         ]
+                
