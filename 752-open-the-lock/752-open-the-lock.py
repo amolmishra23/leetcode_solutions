@@ -1,7 +1,5 @@
 class Solution:
     def openLock(self, deadends: List[str], target: str) -> int:
-        if "0000" in deadends: return -1
-        
         def get_neigh(node):
             res = []
             for i in range(4):
@@ -12,6 +10,7 @@ class Solution:
         
         q = deque([("0000", 0)])
         visited = set(deadends)
+        if "0000" in deadends: return -1
         
         while q:
             node, level = q.popleft()
