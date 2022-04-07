@@ -1,15 +1,17 @@
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        wordDict = set(wordDict)
+        word_set = set(wordDict)
+        n = len(s)
         
         @lru_cache(None)
         def solve(idx):
-          if idx==len(s): return True
-          
-          for i in range(idx+1, len(s)+1):
-            temp = s[idx:i]
-            if temp in wordDict and solve(i): return True
+            if idx==n: return True
             
-          return False
+            for i in range(idx+1, n+1):
+                curr_word = s[idx:i]
+                if curr_word in word_set: 
+                    if solve(i): return True
+                    
+            return False
         
         return solve(0)
