@@ -11,6 +11,10 @@ class Solution:
         """
         ans = [[1]*i for i in range(1,n+1)]
         
+        """
+        We only need to start filling from the 2nd row
+        Filling logic is basically we need to pick from the previous row, j-1 and jth indexes
+        """
         for i in range(2, n):
             for j in range(1, i):
                 # if we carefully observe the picture, we start adding only from j-1,j columns, in prev row. 
