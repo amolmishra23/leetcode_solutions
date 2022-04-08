@@ -1,35 +1,28 @@
 class Solution:
-    def numBusesToDestination(self, routes, S, T):
-        """
-        :type routes: List[List[int]]
-        :type S: int
-        :type T: int
-        :rtype: int
-        """
-        stopToRoute = collections.defaultdict(set)
+    def numBusesToDestination(self, routes: List[List[int]], source: int, target: int) -> int:
+        bus_to_stop = routes
         
-        # make a map of at particular stop, what all buses pass through
-        # idea is, when we traverse a particular stop, we iterate all passing buses, and all routes possible through those buses
-        # and finally check which is the minimum most level, at which, we reach destination
-        for i, stops in enumerate(routes):
-            for stop in stops: 
-                stopToRoute[stop].add(i)
+        stop_to_bus = defaultdict(list)
+        
+        for i, route in enumerate(bus_to_stop):
+            for stop in route:
+                stop_to_bus[stop].append(i)
                 
-        bfs = [(S,0)]
-        # visited for both bus and stops, to not repeat again
-        seenStops = {S}
-        seenRoutes = set()
+        visited_stops, visited_bus = set(), set()
         
-        for stop, count in bfs:
-            if stop == T: 
-                return count
+        q = deque([(source, 0)])
+        
+        while q:
+            curr_stop, curr_count = q.popleft()
             
-            for routeIndex in stopToRoute[stop]:
-                if routeIndex not in seenRoutes:
-                    seenRoutes.add(routeIndex)
-                    for next_stop in routes[routeIndex]:
-                        if next_stop not in seenStops:
-                            seenStops.add(next_stop)
-                            bfs.append((next_stop, count+1))
-        
+            if curr_stop == target: return curr_count
+                
+            for bus in stop_to_bus[curr_stop]:
+                if bus not in visited_bus:
+                    visited_bus.add(bus)
+                    for next_stop in bus_to_stop[bus]:
+                        if next_stop not in visited_stops:
+                            visited_stops.add(next_stop)
+                            q.append((next_stop, curr_count+1))
+                            
         return -1
