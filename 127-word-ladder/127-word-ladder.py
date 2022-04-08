@@ -1,29 +1,31 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
-        wordSet = set(wordList)
-        if beginWord in wordSet:
-          wordSet.remove(beginWord)
+        if endWord not in wordList: return 0
         
-        def neighbors(s):
-            for i in range(len(s)):
-                chars = list(s)
-                for c in ascii_lowercase:
-                    chars[i] = c
-                    newStr = "".join(chars)
-                    if newStr in wordSet:
-                        yield newStr
+        nei = defaultdict(list)
+        wordList.append(beginWord)
         
-        ans = 0
+        for word in wordList:
+            for j in range(len(word)):
+                pattern = word[:j] + "*" + word[j+1:]
+                nei[pattern].append(word)
+                
+        visit = set([beginWord])
         q = deque([beginWord])
+        res = 1
+        
         while q:
-            ans += 1
-            for _ in range(len(q)):
-                cur = q.popleft()
-                if cur == endWord:
-                    return ans
-
-                for newStr in neighbors(cur):
-                    q.append(newStr)
-                    wordSet.remove(newStr)
-                    
-        return 0  # no such transformation sequence.
+            for i in range(len(q)):
+                word = q.popleft()
+                if word==endWord: return res
+                
+                for j in range(len(word)):
+                    pattern = word[:j]+"*"+word[j+1:]
+                    for neiWord in nei[pattern]:
+                        if neiWord not in visit:
+                            visit.add(neiWord)
+                            q.append(neiWord)
+                            
+            res += 1
+            
+        return 0
