@@ -10,6 +10,13 @@ class Solution:
             
             res = dp(i+1, False)
             
+            """
+            Only conditions to be selected. 
+            1. if we are at start index.
+            2. if last picked and last element was arr[i]-1. Then we dont pick.
+            
+            Else we try to pick, and to result we try adding arr[i][0]*arr[i][1]
+            """
             if i==0 or (lastPicked and arr[i-1][0]+1==arr[i][0])==False:
                 res = max(res, arr[i][0]*arr[i][1] + dp(i+1, True))
                 
