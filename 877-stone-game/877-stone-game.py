@@ -5,4 +5,4 @@ class Solution:
             if i>j: return 0
             return max(piles[i]-solve(i+1, j), piles[j]-solve(i, j-1))
         
-        return solve(0, len(piles)-1)
+        return solve(0, len(piles)-1)>0
