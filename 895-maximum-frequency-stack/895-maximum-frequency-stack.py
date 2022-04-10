@@ -7,22 +7,22 @@ class Element:
     def __lt__(self, other):
         if self.freq!=other.freq:
             return self.freq>other.freq
-        return self.seq>other.seq
+        return self.seq > other.seq
 
 class FreqStack:
 
     def __init__(self):
         self.max_heap = []
-        self.freq = defaultdict(int)
+        self.freq = Counter()
         self.seq = 0
 
     def push(self, val: int) -> None:
-        self.freq[val]+=1
-        if self.freq[val]>0: heappush(self.max_heap, Element(val, self.freq[val], self.seq))
+        self.freq[val] += 1
+        heapq.heappush(self.max_heap, Element(val, self.freq[val], self.seq))
         self.seq += 1
 
     def pop(self) -> int:
-        res = heappop(self.max_heap)
+        res = heapq.heappop(self.max_heap)
         self.freq[res.num]-=1
         return res.num
 
