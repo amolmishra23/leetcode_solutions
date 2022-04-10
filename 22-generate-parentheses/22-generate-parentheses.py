@@ -1,25 +1,20 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        """
-        Only condition to be taken care of here is opening should be greater than or equal to closing
-        Else we cant simply put a closing bracket
-        """
-        def solve(op, cl, n, curr, res):
+        def solve(op, cl, n):
             if op==0 and cl==0:
-                # cant proceed any further
-                res.append(''.join(curr))
-                return
+                res.append("".join(curr))
+                return 
             
-            if op>=1:
+            if op >= 1:
                 curr.append("(")
-                solve(op-1, cl, n, curr, res)
+                solve(op-1, cl, n)
                 curr.pop()
                 
-            if op<cl:
+            if op<cl and cl>=1:
                 curr.append(")")
-                solve(op, cl-1, n, curr, res)
+                solve(op, cl-1, n)
                 curr.pop()
-                
-        res = []
-        solve(n, n, n, [], res)
+        
+        res, curr = [], []
+        solve(n, n, n)
         return res
