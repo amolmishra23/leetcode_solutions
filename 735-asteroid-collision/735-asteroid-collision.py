@@ -3,29 +3,21 @@ class Solution:
         stk = []
         
         for a in asteroids:
-          flag = True
-          while stk and a<0 and stk[-1]>0:
-            # The new stone has destroyed prev stone
-            # and may destory many other stones too.
-            # so we continue
-            if abs(a)>stk[-1]:
-              flag = True
-              stk.pop()
-              continue
-            # the new asteriod itself is destroyed.
-            # So we break out
-            elif abs(a)<stk[-1]:
-              flag=False
-              break
-            # both the asteroids are destroyed.
-            # we break out
-            else:
-              flag=False
-              stk.pop()
-              break
-          # if we had a bigger asteroid we need to append that to the stack.
-          if flag:
-            stk.append(a)
-            
+            """
+            Clash only happens when after a positive num in stack, we get a new negative element
+            In that case, we keep cancelling the stack elements (smaller numbers), than -ve element
+            Finally We either add the negative number, or skip it based on if its destroyed. 
+            """
+            while stk and a<0 and stk[-1]>0:
+                diff = a+stk[-1]
+                if diff<0:
+                    stk.pop()
+                elif diff>0:
+                    a = 0
+                else:
+                    a = 0
+                    stk.pop()
+            if a:
+                stk.append(a)
+                
         return stk
-              
