@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution:
     def trimBST(self, root: Optional[TreeNode], low: int, high: int) -> Optional[TreeNode]:
+        """
+        If by change the root.val is not in range of low to high, we trim it off, and just send the left part.
+        If at all root.val is in limits, recurse separately on the left and right subtrees. 
+        """
         if not root: return None
         
         if root.val > high:
