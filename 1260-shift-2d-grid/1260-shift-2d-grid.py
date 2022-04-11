@@ -16,6 +16,9 @@ class Solution:
             for j in range(n):
                 # converting it into 1d index. 
                 # doing its mod, to not exceed the limits. 
+                
+                # i*n+j and add k to it
+                # now mod it with m*n
                 index = (i*n+j+k)%(m*n)
                 x=index//n
                 y=index%n
