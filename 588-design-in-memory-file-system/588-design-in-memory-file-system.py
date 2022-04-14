@@ -11,7 +11,7 @@ class FileSystem:
         
         for p in path[1:]:
             node = node.setdefault(p, {})
-            
+        
         if type(node)==str: return [path[-1]]
         
         return sorted(node.keys())
@@ -34,7 +34,7 @@ class FileSystem:
         if file not in node:
             node[file] = content
         else:
-            node[file] += content
+            node[file]+= content
 
     def readContentFromFile(self, filePath: str) -> str:
         path = filePath.split("/")
