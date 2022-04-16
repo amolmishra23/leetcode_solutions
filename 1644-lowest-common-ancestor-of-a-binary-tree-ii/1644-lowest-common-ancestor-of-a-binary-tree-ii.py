@@ -6,35 +6,23 @@
 #         self.right = None
 
 class Solution:
-    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        def euler_tour(node, d):
-            nonlocal path, depth, p_found, q_found
-            
-            if p_found and q_found: return 
-            if node==p: p_found = True
-            if node==q: q_found = True
-                
-            path.append(node)
-            depth.append(d)
-            
-            if node.left:
-                euler_tour(node.left, d+1)
-                path.append(node)
-                depth.append(d)
-                
-            if node.right:
-                euler_tour(node.right, d+1)
-                path.append(node)
-                depth.append(d)
-                
-        path, depth = [], []
-        p_found, q_found = False, False
-        euler_tour(root, 0)
+    def find_lca(self, root, p, q):
+        if root in {None, p, q}: return root
+
+        left, right = self.find_lca(root.left, p, q), self.find_lca(root.right, p, q)
+
+        if left is not None and right is not None: return root
+
+        return left or right
+    
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':        
+        if root is None or p is None or q is None: return None
         
-        if not p_found or not q_found: return None
+        res = self.find_lca(root, p, q)
         
-        i, j = sorted((path.index(p), path.index(q)))
+        if res == p:
+            return res if self.find_lca(p, q, q)==q else None
+        elif res == q:
+            return res if self.find_lca(q, p, p)==p else None
         
-        k = min(range(i, j), key = lambda k: depth[k])
-        
-        return path[k]
+        return res
