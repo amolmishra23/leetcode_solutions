@@ -7,7 +7,7 @@
 class Solution:
     def createBinaryTree(self, descriptions: List[List[int]]) -> Optional[TreeNode]:
         nodes = {}
-        all_nodes, child_nodes = set(), set()
+        child_nodes = set()
         
         for p, x, is_left in descriptions:
             nodes[p] = nodes[p] if p in nodes else TreeNode(p)
@@ -18,7 +18,6 @@ class Solution:
             else:
                 nodes[p].right = nodes[x]
             
-            all_nodes.add(p); all_nodes.add(x)
             child_nodes.add(x)
                 
-        return nodes[all_nodes.difference(child_nodes).pop()]
+        return nodes[set(nodes).difference(child_nodes).pop()]
