@@ -2,6 +2,16 @@ from copy import deepcopy
 
 class Solution:
     def maxTrailingZeros(self, grid: List[List[int]]) -> int:
+        """
+        Number of zeros, we can easily find using number of 2, 5
+        So in prefix sum way, for all 4 directions we need to find the number of 2,5
+        up, down, left, right
+        
+        Now as we find the result, we can find 4 types. 
+        up-right, up-left, down-right, down-left. 
+        We need to subtract the curr-idx we iterating, as thats added 2 times. 
+        Finally number of zeros is only min count of 2,5. That also needed to be accounted. 
+        """ 
         @lru_cache(None)
         def factors(x):
             res = [0,0]
