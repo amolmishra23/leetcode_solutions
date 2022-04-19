@@ -16,8 +16,9 @@ class Solution:
         def inorder(root):
             if root:
                 inorder(root.left)
-                if self.prev.val >= root.val:
-                    self.first = self.first or self.prev
+                if not self.first and self.prev.val >= root.val:
+                    self.first = self.prev
+                if self.first and self.prev.val >= root.val:
                     self.second = root
                 self.prev = root
                 inorder(root.right)
