@@ -6,12 +6,14 @@
 #         self.right = None
 
 class Solution:
-    def inorderSuccessor(self, root, p):
+    def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> Optional[TreeNode]:
         succ = None
+        
         while root:
-            if p.val < root.val:
+            if root.val > p.val:
                 succ = root
                 root = root.left
             else:
                 root = root.right
+                
         return succ
