@@ -6,36 +6,38 @@
 #         self.right = None
 
 class Solution(object):
-    def distanceK(self, root, target, K):
+    def distanceK(self, root, target, k):
         """
         :type root: TreeNode
         :type target: TreeNode
-        :type K: int
+        :type k: int
         :rtype: List[int]
         """
-        def dfs(root, par=None):
-            if root is not None:
-                root.par = par
-                dfs(root.left, root)
-                dfs(root.right, root)
+        graph = defaultdict(list)
+        
+        def construct_graph(parent, child):
+            if parent and child:
+                graph[parent.val].append(child.val)
+                graph[child.val].append(parent.val)
+            if child.left: construct_graph(child, child.left)
+            if child.right: construct_graph(child, child.right)
                 
-        dfs(root)
+        construct_graph(None, root)
         
-        queue = [(target, 0)]
-        seen = {target}
+        bfs = deque([target.val])
+        seen = set(bfs)
         
-        while queue:
-            if queue[0][1]==K: return [elem.val for elem,_ in queue]
-
-            len_ = len(queue)
+        for _ in range(k):
+            tmp = deque()
             
-            for _ in range(len_):
-                popped, dis = queue.pop(0)
-                for adj in [popped.left, popped.right, popped.par]:
-                    if adj and adj not in seen:
-                        seen.add(adj)
-                        queue.append([adj, dis+1])
+            while bfs:
+                curr = bfs.popleft()
+                for neigh in graph[curr]:
+                    if neigh not in seen:
+                        tmp.append(neigh)
                         
-        return []
+            seen |= set(tmp)
+            bfs = tmp
             
-            
+        return list(bfs)
+                
