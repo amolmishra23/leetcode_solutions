@@ -14,14 +14,13 @@ class Solution(object):
         def solve(node):
             if node is None: return 0
             
-            left_val = solve(node.left)
-            if left_val!=0: return left_val
+            res = solve(node.left)
+            if res!=0: return res
             
             self.k -= 1
             if self.k==0: return node.val
             
-            right_val = solve(node.right)
-            return right_val
+            return solve(node.right)
         
         self.k = k
         return solve(root)
