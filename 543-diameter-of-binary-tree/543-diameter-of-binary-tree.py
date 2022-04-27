@@ -9,7 +9,7 @@ class Solution:
         if node is None: return 0
         
         lh, rh = self.height(node.left), self.height(node.right)
-        diam = lh + rh + 1
+        diam = lh + rh 
         self.res = max(self.res, diam)
         
         return max(lh, rh)+1
@@ -17,4 +17,4 @@ class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         self.res = float('-inf')
         self.height(root)
-        return self.res-1
+        return self.res
