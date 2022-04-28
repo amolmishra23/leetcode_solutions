@@ -6,16 +6,16 @@ class Solution:
         def dfs(i):
             if i in safe: return safe[i]
             
-            safe[i] = False
+            safe[i] = True
             
             for nei in graph[i]:
-                if not dfs(nei): return False
+                if dfs(nei): return True
                 
-            safe[i] = True
-            return True
+            safe[i] = False
+            # return True
             
         res = []
         for i in range(n):
-            if dfs(i): res.append(i)
+            if not dfs(i): res.append(i)
                 
         return res
