@@ -5,12 +5,10 @@ class Solution:
             for x in s:
                 if x=="#":
                     if stk: stk.pop()
-                else:
-                    stk.append(x)
+                else: stk.append(x)
 
             return "".join(stk)
         
-        a, b = solve(S), solve(T)
-        return a==b
+        return solve(S) == solve(T)
             
             
