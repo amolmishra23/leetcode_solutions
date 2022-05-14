@@ -1,21 +1,17 @@
 class Solution:
     def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
-        n = len(graph)
-        safe = {}
+        def topo(curr, visited):
+            if curr in visited: return visited[curr]
+            
+            visited[curr] = True
+            
+            for neigh in graph[curr]:
+                if topo(neigh, visited): return True
+            
+            visited[curr] = False
         
-        def dfs(i):
-            if i in safe: return safe[i]
+        visited, res = {}, []
+        for i in range(len(graph)):
+            if not topo(i, visited): res.append(i)
             
-            safe[i] = True
-            
-            for nei in graph[i]:
-                if dfs(nei): return True
-                
-            safe[i] = False
-            # return True
-            
-        res = []
-        for i in range(n):
-            if not dfs(i): res.append(i)
-                
         return res
