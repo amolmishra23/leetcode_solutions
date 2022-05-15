@@ -1,25 +1,18 @@
-import collections
 class Solution:
-    def snakesAndLadders(self, board):
+    def snakesAndLadders(self, board: List[List[int]]) -> int:
         n = len(board)
-        need = {1: 0}
-        bfs = [1]
-        for x in bfs:
-            for i in range(x + 1, x + 7):
-                # finding which row and col will it lie in
-                # we do i-1, because the indexing starts from 0
-                a, b = (i - 1) // n, (i - 1) % n
-                
-                # if even we can go from left to right
-                # if odd, we need to come from right to left
-                nxt = board[~a][b if a % 2 == 0 else ~b]
-                
-                # if its -1, we can give it a skip
-                if nxt > 0: i = nxt
-                    
-                # we reached the destination
-                if i == n * n: return need[x] + 1
+        need = {1:0}
+        q = deque([(1, 0)])
+        
+        while q:
+            pos, steps = q.popleft()
+            for i in range(pos+1, pos+7):
+                row, col = (i-1)//n, (i-1)%n
+                next_val = board[~row][col if row%2==0 else ~col]
+                if next_val>0: i = next_val
+                if i==n*n: return need[pos]+1
                 if i not in need:
-                    need[i] = need[x] + 1
-                    bfs.append(i)
+                    need[i] = need[pos]+1
+                    q.append((i, need[i]))
+        
         return -1
