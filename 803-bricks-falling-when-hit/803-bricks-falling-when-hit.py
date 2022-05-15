@@ -42,8 +42,9 @@ class Solution:
         uf = UnionFind(R*C+1)
         
         """
-        Iterating over the hit_grid(Doesnt include the actual hits), we try to see if any brick, has any adjacent bricks. We try to make them as 1 component using the union find. 
-        If the row is 0, means its rooftop, so we directly add it to the roof component
+        Iterating over the hit_grid(Actual hit spots are 0 in here), we try to see if any brick, has any adjacent bricks. 
+        We try to make them as 1 component using the union find. 
+        If the row is 0, means its rooftop, so we directly add it to the separate roof component
         """
         for r, row in enumerate(hit_grid):
             for c, val in enumerate(row):
@@ -53,13 +54,14 @@ class Solution:
                 if c and hit_grid[r][c-1]: uf.union(index(C, r, c), index(C, r, c-1))
         
         result = []
+        
         """
         We iterate over the hits in reverse
         If there was no brick at hit location, ignore.
         if there was brick at hit location, we do a union around, making them all under same component. 
         If its a 0th row, means its root component. Add it to roof component
         Finally make the hit_grid of that hit location as 1 for future purposes.
-        We find the curr_roof-prev_roof-1. 1 is for hit location. And append this to result array
+        We find the curr_roof-prev_roof-1. 1 is for hit location. And append this to result array (this gives us number of bricks which fell)
         
         Return the result reversed array
         """
