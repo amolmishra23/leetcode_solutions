@@ -2,6 +2,13 @@ class Solution:
     def hasPath(self, maze, start, destination):
         m, n, stopped = len(maze), len(maze[0]), set()
         def dfs(x, y):
+            """
+            Whole intent of the problem is, we need to go from start to dest
+            If we choose particular direction, we can keep travelling in it endlessly till we hit a wall (1)
+            when we hit a wall again we can basically do dfs, which keeps choosing all the 4 paths
+            this game is played till we reach destination and return true. 
+            else all other invocations keep returning false. 
+            """
             if (x, y) in stopped: 
                 return False
             stopped.add((x, y))
