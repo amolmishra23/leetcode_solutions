@@ -1,5 +1,10 @@
 class Solution:
     def maxEnvelopes(self, envelopes: List[List[int]]) -> int:
+        """
+        Learn the concept from: 
+        https://leetcode.com/problems/longest-increasing-subsequence/discuss/1636162/java-binary-search-stepwise-explanation
+        (using binary search to find LIS faster than DP)
+        """
         envelopes.sort(key = lambda x: (x[0], -x[1]))
         
         def lis(arr):
