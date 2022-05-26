@@ -1,6 +1,8 @@
 class DSUF:
     def __init__(self, row):
         self.roots = dict()
+        # the idea is, we are already making elements in pairs of 2 as DSU
+        # now when they are essentially dislocated, we would now need to find number of unique sets we have
         for x in row: 
             if x%2!=0: self.roots[x] = x-1
             else: self.roots[x] = x
@@ -32,6 +34,7 @@ class Solution:
         for i in range(0, n, 2):
             dsuf.union(row[i], row[i+1])
         
+        print(dsuf.roots)
         disjoint_sets = dsuf.disjoint_sets()
         return n//2 - disjoint_sets
         
