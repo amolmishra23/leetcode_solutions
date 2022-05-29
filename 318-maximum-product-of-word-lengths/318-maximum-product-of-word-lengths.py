@@ -1,19 +1,17 @@
 class Solution:
     def maxProduct(self, words: List[str]) -> int:
-        n = len(words)
-        words.sort(key=lambda x: len(x), reverse=True)
-        bits = [0]*len(words)
+        words_bitmap = [0]*len(words)
+        words.sort(key = lambda x: len(x), reverse=True)
+        for idx, word in enumerate(words): 
+            for ch in word: 
+                words_bitmap[idx] |= (1<<(ord(ch)-ord('a')))
+                
+        res = 0
         
-        for i in range(n):
-            for c in words[i]:
-                bits[i] |= (1 << (ord(c) - ord('a')))
+        for i in range(len(words)):
+            for j in range(i+1, len(words)):
+                if len(words[i])*len(words[j]) <= res: break
+                if (words_bitmap[i]&words_bitmap[j]) == 0: res = max(res, len(words[i])*len(words[j]))
+
+        return res
         
-        max_product = 0
-        for i in range(n):
-            if len(words[i])**2 <= max_product: break
-            
-            for j in range(i+1, n):
-                if len(words[i]*len(words[j])) <= max_product: break
-                if not (bits[i] & bits[j]): max_product = len(words[i])*len(words[j])
-        
-        return max_product
