@@ -6,6 +6,5 @@ class Solution:
             
             return arr[i][j] + min(solve(i+1, j), solve(i+1, j+1))
         
-        
         return solve(0, 0)
         
