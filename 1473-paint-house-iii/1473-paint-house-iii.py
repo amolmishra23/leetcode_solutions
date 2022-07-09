@@ -1,29 +1,19 @@
 class Solution:
     def minCost(self, houses: List[int], cost: List[List[int]], m: int, n: int, target: int) -> int:
-        # maps (i, t, p) -> the minimum cost to paint houses i <= h < m with t neighborhoods, where house i - 1 is color p
-        dp = {}
-        
-		# You can use this functools line instead of dp to make it faster, but I cache 
-		# manually because I don't want to abstract the caching away from the reader.
-		# @functools.lru_cache(None)
-        def dfs(i, t, p):
-            key = (i, t, p)
+        # i is index of the house
+        # t is remaining number of groups
+        # p is previous home color
+        @lru_cache(None)
+        def dp(i, t, p):
+            if i==len(houses) or t<0:
+                return 0 if i==len(houses) and t==0 else float('inf')
             
-            if i == len(houses) or t < 0 or m - i < t:
-                # base case - we're trying to color 0 houses. Only i == len(houses) is necessary
-				# to check here, but it prunes a bit of the search space to make things faster.
-                return 0 if t == 0 and i == len(houses) else float('inf')
+            # house is not painted
+            if houses[i]==0:
+                # lets paint the house with all possible new colors
+                return min(cost[i][nc-1]+dp(i+1, t-(p!=nc), nc) for nc in range(1, n+1))
+            else:
+                return dp(i+1, t-(houses[i]!=p), houses[i])
             
-            if key not in dp:
-                if houses[i] == 0:
-                    dp[key] = min(dfs(i + 1, t - (nc != p), nc) + cost[i][nc - 1] for nc in range(1, n + 1))
-                else:
-                    dp[key] = dfs(i + 1, t - (houses[i] != p), houses[i])
+        return dp(0, target, -1) if dp(0, target, -1)!=float("inf") else -1
                 
-            return dp[key]
-            
-        ret = dfs(0, target, -1)
-        # if ret is infinity, then we failed every case because there were too many neighborhoods
-        # to start. If we could paint over houses that were previously painted, we could remedy that,
-        # but the problem doesn't allow that. so, we return -1 in that case.
-        return ret if ret < float('inf') else -1
