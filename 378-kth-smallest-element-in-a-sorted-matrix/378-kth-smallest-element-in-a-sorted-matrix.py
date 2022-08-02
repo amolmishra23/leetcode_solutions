@@ -1,3 +1,8 @@
+"""
+Time: O((M+logN) * logD), where M <= 300 is the number of rows, N <= 300 is the number of columns, D <= 2*10^9 is the difference between the maximum element and the minimum element in the matrix.
+Space: O(1).
+"""
+
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         m, n = len(matrix), len(matrix[0])
