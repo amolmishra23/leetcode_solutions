@@ -2,12 +2,16 @@ class Solution:
     def findOriginalArray(self, changed: List[int]) -> List[int]:
         count, res = Counter(changed), []
         
-        for num in sorted(changed):
-            if count[num]==0: continue
-            if count[2*num]==0: return []
-            res.append(num)
-            if num==0 and count[num]<=1: return []
-            count[num]-=1
-            count[num*2]-=1
+        if len(changed)%2: return []
+        
+        for x in sorted(count):
+            if count[x] > count[2*x]: return []
+            
+            if x==0:
+                if count[x]%2: return []
+                else: res.extend([0]*(count[x]//2))
+            else:
+                res.extend([x]*count[x])
+            count[2*x]-=count[x]
             
         return res
