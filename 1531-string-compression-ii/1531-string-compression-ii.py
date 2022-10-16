@@ -8,12 +8,9 @@ class Solution:
         if start == len(s):
             return 0
         if s[start] == prev_char:
-            inc = 1 if prev_count == 1 or prev_count == 9 or prev_count == 99 else 0
-            # keep it 
+            inc = 1 if prev_count in {1, 9, 99} else 0
             ans1 = inc + self.dfs(s, start+1, prev_char, prev_count + 1, remains)
-            # remove it 
-            ans2 = self.dfs(s, start+1, prev_char, prev_count, remains-1)
-            return min(ans1, ans2)
+            return ans1
         else:
             # keep it 
             ans1 = self.dfs(s, start+1, s[start], 1, remains) + 1
