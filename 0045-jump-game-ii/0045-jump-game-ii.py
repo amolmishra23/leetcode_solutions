@@ -1,14 +1,20 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
-        @lru_cache(None)
-        def can_reach(idx):
-            if idx>=len(nums)-1: return 0
-            
-            cost = float('inf')
-            
-            for i in range(1, nums[idx]+1):
-                cost = min(cost, 1 + can_reach(idx+i))
-                
-            return cost
+        slow, fast = 0, 0
+        next_max, res = 0, 0
         
-        return can_reach(0)
+        """
+        We keep running 2 parallel pointers. 
+        We try to make a jump (need to find which is the max sized jump we can make)
+        In the end we return which is the number of jumps we make
+        This we do, as long as we didnt reach the last element. 
+        """
+            
+        while fast<len(nums)-1:
+            while slow<=fast:
+                next_max = max(next_max, slow+nums[slow])
+                slow += 1
+            res += 1
+            fast = next_max
+            
+        return res
