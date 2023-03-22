@@ -14,7 +14,8 @@ class Solution:
         
         # No need to check if we reached final dest or not. 
         # Because problem spec has specified at least one path there
-        # Even if we reached final dest, still travel all routes in hope of finding a minimum score, and only then return
+        # Even if we reached final dest, still travel all routes 
+        # in hope of finding a minimum score, and only then return
         while q:
             curr = q.popleft()
             
