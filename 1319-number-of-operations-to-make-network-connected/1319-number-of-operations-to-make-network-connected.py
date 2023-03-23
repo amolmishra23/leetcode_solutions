@@ -1,5 +1,6 @@
 class Solution:
     def makeConnected(self, n: int, connections: List[List[int]]) -> int:
+        if len(connections)<n-1: return -1
         par, count, components = {}, defaultdict(lambda: 1), n
         
         def find(x):
