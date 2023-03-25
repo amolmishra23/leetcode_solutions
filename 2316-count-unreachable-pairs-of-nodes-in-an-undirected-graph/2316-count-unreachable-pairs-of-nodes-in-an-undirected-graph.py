@@ -2,6 +2,7 @@ class UnionFind:
     def __init__(self, n):
         self.parent = {}
         self.size = defaultdict(lambda: 1)
+        # total edges possible if we connect all the components
         self.total = (n*(n-1))//2
         
     def find(self, x):
@@ -13,6 +14,7 @@ class UnionFind:
     def union(self, x, y):
         px, py = self.find(x), self.find(y)
         if px==py: return False
+        # subtracting number of edges we did the union
         self.total -= (self.size[px]*self.size[py])
         if self.size[px] > self.size[py]:
             self.parent[py]=px
