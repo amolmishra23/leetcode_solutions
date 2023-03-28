@@ -2,6 +2,10 @@ class Solution:
     def mincostTickets(self, days: List[int], costs: List[int]) -> int:
         @lru_cache(None)
         def solve(idx):
+            """
+            On each day, find the net cost if we take each of the 3 tickets
+            Whatever is minimum, we will return
+            """
             if idx>=len(days): return 0
             
             cost_1 = costs[0]+solve(idx+1)
