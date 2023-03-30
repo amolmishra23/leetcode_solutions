@@ -20,6 +20,9 @@ class Solution:
         
         f = self.isScramble
         
+        # to find scrambled strings
+        # python indexing will be [:i], [:i]
+        # and another will be [:i], [-i:] (example find from start to 2nd index. and find from last 2nd index to end. )
         for i in range(1, n):
             if (f(s1[:i], s2[:i]) and f(s1[i:], s2[i:])) or \
                 (f(s1[:i], s2[-i:]) and f(s1[i:], s2[:-i])):
