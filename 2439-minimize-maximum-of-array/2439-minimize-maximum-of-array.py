@@ -4,7 +4,7 @@ class Solution:
         Assume we are given 1,5,10
         As per problem everytime we increase idx, and reduce idx-1
         So, the sum remains same. 
-        So we will now have 3,3,10. (4,9,5,8,6,7)
+        So we will now have 3,3,10. (2,4,10) and then (3,3,10)
         Next we will have 3,6,7
         We can even make it 4,5,7. And then (4,6,6)
         
