@@ -20,4 +20,4 @@ class Solution:
                 solve(node.right, 0, steps+1)
                 solve(node.left, 1, 1)
         
-        solve(root, 0, 0); solve(root, 0, 0); return self.res
+        solve(root, 0, 0); solve(root, 1, 0); return self.res
