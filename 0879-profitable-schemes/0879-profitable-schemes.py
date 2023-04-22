@@ -8,9 +8,9 @@ class Solution:
             
             res = 0
             if curr_people+group[i] <= n:
-                res += (dp(i+1, min(curr_profit+profit[i], min_profit), curr_people+group[i]))%MOD
-            res += (dp(i+1, curr_profit, curr_people))%MOD
+                res = (res + dp(i+1, min(curr_profit+profit[i], min_profit), curr_people+group[i]))%MOD
+            res = (res + dp(i+1, curr_profit, curr_people))%MOD
             
             return res
         
-        return dp(0, 0, 0)%MOD
+        return dp(0, 0, 0)
