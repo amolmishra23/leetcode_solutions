@@ -1,18 +1,29 @@
 class Solution:
-    def maxScore(self, nums1: List[int], nums2: List[int], k: int) -> int:
+    def maxScore(self, speed: List[int], efficiency: List[int], k: int) -> int:
         """
         Same as the problem: https://leetcode.com/problems/maximum-performance-of-a-team/
         """
+        n = len(speed)
+        engineers = list(zip(efficiency, speed))
+        engineers.sort(reverse=True)
         
-        res, curr_sum = 0, 0
-        heap = []
+        min_heap = []
         
-        for a, b in sorted(list(zip(nums1, nums2)), key = lambda x: -x[1]):
-            heapq.heappush(heap, a)
-            curr_sum += a
-            if len(heap)>k:
-                curr_sum -= heapq.heappop(heap)
-            if len(heap) == k:
-                res = max(res, curr_sum*b)
+        curr_sum, res = 0, 0
+        
+        for e,s in engineers:
+            # curr_sum stores the sum of top k numbers in sum
+            curr_sum += s
+            heapq.heappush(min_heap, s)
+            if len(min_heap) > k:
+                curr_sum -= heapq.heappop(min_heap)
+                
+            # assuming we popped out the s, in prev line. 
+            # we ideally dont need to update res. 
+            # but no need to worry, because current e is less than previous e. So update wont be there. 
+            
+            # updating res, with product of curr_sum*e
+            if len(min_heap)==k:
+                res = max(res, curr_sum*e)
         
         return res
