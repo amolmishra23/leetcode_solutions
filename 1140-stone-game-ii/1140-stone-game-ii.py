@@ -1,5 +1,6 @@
 class Solution:
     def stoneGameII(self, piles: List[int]) -> int:
+        # Good explanation at: https://www.youtube.com/watch?v=xyQbakH7_tA
         @lru_cache(None)
         def solve(idx, m, player):
             if idx>=len(piles): return 0
