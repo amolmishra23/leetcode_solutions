@@ -1,22 +1,33 @@
 class Solution:
-    def check(self, a):
-        left_offset = max(a - self.index, 0)
-        result = (a + left_offset) * (a - left_offset + 1) // 2
-        right_offset = max(a - ((self.n - 1) - self.index), 0)
-        result += (a + right_offset) * (a - right_offset + 1) // 2
-        return result - a
-
-    def maxValue(self, n, index, maxSum):
-        self.n = n
-        self.index = index
-
-        maxSum -= n
-        left, right = 0, maxSum
-        while left < right:
-            mid = (left + right + 1) // 2
-            if self.check(mid) <= maxSum:
-                left = mid
+    def maxValue(self, n: int, index: int, maxSum: int) -> int:
+        n_sum = lambda x: (x*(x-1)//2)+1
+        
+        def calc(val, slots):
+            res = 0
+            
+            if val>slots:
+                res = n_sum(val) - n_sum(val-slots)
             else:
-                right = mid - 1
-        result = left + 1
-        return result
+                res = n_sum(val)
+                res += (slots-val)
+            
+            return res
+        
+        low, high = 1, maxSum
+        left_slots, right_slots = index, n-index-1
+        res = None
+        
+        while low<=high:
+            mid = low + (high-low)//2
+            
+            left_sum = calc(mid, left_slots)
+            right_sum = calc(mid, right_slots)
+            total_sum = left_sum + right_sum + mid
+            
+            if total_sum > maxSum:
+                high = mid-1
+            else:
+                res = mid
+                low = mid+1
+        
+        return res
