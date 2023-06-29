@@ -1,5 +1,12 @@
 class Solution:
     def shortestPathAllKeys(self, grid: List[str]) -> int:
+        """
+        We need to visit a node in graph multiple times here
+        Because we might need to traverse multiple ways to get the key, before passing the lock
+        Hence our visited should contain coordinates and keys by far. 
+        Once we have all the keys, we can return the iteration we are in 
+        (That being best path to achieve our answer). 
+        """
         m, n = len(grid), len(grid[0])
         
         key_count, start = 0, None
