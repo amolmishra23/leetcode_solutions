@@ -1,8 +1,9 @@
 class DSU:
-    def __init__(self, N):
-        self.p = list(range(N))
+    def __init__(self):
+        self.p = {}
 
     def find(self, x):
+        self.p.setdefault(x, x)
         if self.p[x] != x:
             self.p[x] = self.find(self.p[x])
         return self.p[x]
@@ -14,9 +15,8 @@ class DSU:
 
 class Solution:
     def latestDayToCross(self, n, m, C):
-        row, col = len(C), len(C[0])
-        dsu = DSU(m*n + 2)
-        grid = [[1] * m for _ in range(n)]
+        dsu = DSU()
+        grid = [[1 for _ in range(m)] for _ in range(n)]
         neibs = [[0,1],[0,-1],[1,0],[-1,0]]
         C = [(x-1, y-1) for x, y in C]
 
@@ -24,12 +24,13 @@ class Solution:
             return x * m + y + 1
 
         for i in range(len(C) - 1, -1, -1):
-            x, y = C[i][0], C[i][1]
+            x, y = C[i]
 
             grid[x][y] = 0
             for dx, dy in neibs:
-                ind = index(x+dx, y+dy)
-                if x+dx>=0 and x+dx<n and y + dy >= 0 and y + dy < m and grid[x+dx][y+dy] == 0:
+                nx, ny = x+dx, y+dy
+                ind = index(nx, ny)
+                if 0<=nx<n and 0<=ny<m and grid[x+dx][y+dy] == 0:
                     dsu.union(ind, index(x, y))
             if x == 0:
                 dsu.union(0, index(x, y))
