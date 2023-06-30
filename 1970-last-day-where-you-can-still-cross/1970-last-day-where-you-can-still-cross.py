@@ -21,11 +21,12 @@ class Solution:
         C = [(x-1, y-1) for x, y in C]
 
         def index(x, y):
+            # We are hoping for indexing to be 1 based
+            # And 0, m*n+1 are for ceil and floor respectively. 
             return x * m + y + 1
 
         for i in range(len(C) - 1, -1, -1):
             x, y = C[i]
-
             grid[x][y] = 0
             for dx, dy in neibs:
                 nx, ny = x+dx, y+dy
@@ -36,6 +37,5 @@ class Solution:
                 dsu.union(0, index(x, y))
             if x == n - 1:
                 dsu.union(m*n + 1, index(x, y))
-
             if dsu.find(0) == dsu.find(m*n + 1):
                 return i
