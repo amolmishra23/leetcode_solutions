@@ -10,10 +10,10 @@ class Solution:
             count[last_char] += 1
             max_len = max(max_len, count[last_char])
             
-            if ((window_end-window_start+1) - max_len)>k:
+            while ((window_end-window_start+1) - max_len)>k:
                 count[s[window_start]]-=1
                 window_start += 1
-            else:
-                res = max(res, (window_end-window_start+1))
+            
+            res = max(res, (window_end-window_start+1))
         
         return res
