@@ -8,6 +8,16 @@ class Solution:
     def generateTrees(self, n: int) -> List[Optional[TreeNode]]:
         
         def solve(start, end):
+            """
+            As we are dealing with BST, we know for sure
+            Left side has values less than root
+            Right side has values less than root
+            Assuming we make 3 as root. Left subtree has 1,2. 
+            Right has 4,5,6,7. 
+            Hence we design our recursion like that, to get trees for specific numbers
+            Accordingly make all the possible trees
+            And return the values
+            """
             res = []
             
             for root in range(start, end+1):
