@@ -1,3 +1,4 @@
+# a very smart way to do union find. (to count edges, and weights included so far)
 class UnionFind:
     def __init__(self, n):
         self.parents = list(range(n))
@@ -36,12 +37,17 @@ class Solution:
                 w, a, b, _ = edges[j]
                 uf2.union(a, b, w)
                 
+            # if missing i edge we have higher weight, means its critical edge
             if uf2.weight>minWeight or uf2.count<n-1: ce.append(edges[i][3])
+            # if weight was still same. Its not critical
+            # time to find out if it is psuedo critical
             else:
                 uf3 = UnionFind(n)
+                # because we mandatory need to include this. 
                 w,a,b,_ = edges[i]
                 uf3.union(a,b,w)
                 for j in range(len(edges)):
+                    # lets add all other edges
                     w,a,b,_ = edges[j]
                     uf3.union(a,b,w)
                 
