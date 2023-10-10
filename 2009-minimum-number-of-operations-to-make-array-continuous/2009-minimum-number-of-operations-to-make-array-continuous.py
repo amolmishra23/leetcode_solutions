@@ -1,5 +1,5 @@
 class Solution:
-    def minOperations1(self, nums: List[int]) -> int:
+    def minOperations(self, nums: List[int]) -> int:
         n = len(nums)
         nums = sorted(set(nums))  
 
@@ -11,7 +11,7 @@ class Solution:
             ans = min(ans, n - uniqueLen)
         return ans
     
-    def minOperations(self, nums: List[int]) -> int:
+    def minOperations1(self, nums: List[int]) -> int:
         length = len(nums)
         nums = sorted(set(nums))
         r = 0
