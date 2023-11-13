@@ -1,5 +1,10 @@
 class Solution:
-    def sortVowels(self, s: str) -> str:
+    def sortVowels(self, s):
+        VOWELS="AEIOUaeiou"
+        only_vowels = sorted([ch for ch in s if ch in VOWELS], reverse=True)
+        return "".join([only_vowels.pop() if ch in VOWELS else ch for ch in s])
+        
+    def sortVowelsLong(self, s: str) -> str:
         VOWELS, count ="AEIOUaeiou", Counter()
         s = list(s)
         
