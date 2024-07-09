@@ -1,9 +1,9 @@
 class Solution:
     def averageWaitingTime(self, customers: List[List[int]]) -> float:
-        res, chef = [], 0
+        res, chef = 0, 0
         
         for arrival, duration in customers:
             chef = max(arrival, chef)+duration
-            res.append(chef-arrival)
+            res += (chef-arrival)
             
-        return sum(res)/len(res)
+        return res/len(customers)
