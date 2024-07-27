@@ -1,5 +1,18 @@
 class Solution:
     def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
+        alphabet = string.ascii_lowercase
+        graph = defaultdict(lambda: inf)
+        
+        for a, b, c in zip(original, changed, cost): 
+            graph[a, b] = min(graph[a, b], c)
+        
+        for char, a, b in product(alphabet, alphabet, alphabet):
+            graph[a, b] = min(graph[a, b], graph[a, char] + graph[char, b])
+        
+        ans = sum(table[a, b] for a, b in zip(source, target) if a != b)
+        return ans if ans != inf else -1
+    
+    def minimumCost(self, source: str, target: str, original: List[str], changed: List[str], cost: List[int]) -> int:
         graph = defaultdict(list)
         
         for u,v,c in zip(original, changed, cost):
