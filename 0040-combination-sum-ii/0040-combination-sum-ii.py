@@ -1,21 +1,26 @@
 class Solution:
     def combinationSum2(self, arr: List[int], target: int) -> List[List[int]]:
-        res = set()
-        def solve(idx, curr_path, target):
+        res = []
+        arr.sort()
+        
+        def dfs(i, curr, total):
             nonlocal res
-            if target==0:
-                res.add(tuple(curr_path))
+            if total == target: 
+                res.append(list(curr))
                 return
             
-            if idx>=len(arr) or target<0: return 
+            if total > target or i == len(arr):
+                return
             
-            for i in range(idx, len(arr)):
-                if i>idx and arr[i]==arr[i-1]: continue
-                if arr[i]>target: return
-                curr_path.append(arr[i])
-                solve(i+1, curr_path, target-arr[i])
-                curr_path.pop()
-        
-        arr.sort()
-        solve(0, [], target)
+            curr.append(arr[i])
+            dfs(i+1, curr, total + arr[i])
+            curr.pop()
+            
+            # Skipping candidates[i]
+            # In case we have an input like [1,1,1,1,7]. 
+            # only valid combination is [1,7]
+            while i+1<len(arr) and arr[i]==arr[i+1]: i+=1
+            dfs(i+1, curr, total)
+            
+        dfs(0, [], 0)
         return res
