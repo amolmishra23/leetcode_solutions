@@ -1,21 +1,25 @@
 class Solution:
     def smallestDistancePair(self, nums: List[int], k: int) -> int:
-        def enough(distance) -> bool:  # two pointers
-            count, i, j = 0, 0, 0
-            while i < n or j < n:
-                while j < n and nums[j] - nums[i] <= distance:
-                    j += 1
-                count += j - i - 1
-                i += 1
-            return count >= k
-
         nums.sort()
-        n = len(nums)
-        left, right = 0, nums[-1] - nums[0]
-        while left < right:
-            mid = left + (right - left) // 2
-            if not enough(mid):
-                left = mid + 1
+        
+        def helper(dist):
+            l, res = 0, 0
+            
+            for r in range(len(nums)):
+                while nums[r]-nums[l] > dist:
+                    l += 1
+                res += (r - l)
+                
+            return res
+        
+        l, r = 0, nums[-1]-nums[0]
+        while l<r:
+            m = l + (r-l)//2
+            pairs = helper(m)
+            if pairs >= k:
+                r = m
             else:
-                right = mid
-        return left
+                l = m+1
+                
+        return r
+            
