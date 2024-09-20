@@ -16,6 +16,8 @@ class Solution:
                 
             return res
         
+        # whatever part prefix==suffix
+        # remaining whatever is left, we reverse it and attach at beginning of the string
         lps = compute_lps(s + "#" + s[::-1])
         
         return s[lps[-1]:][::-1] + s
