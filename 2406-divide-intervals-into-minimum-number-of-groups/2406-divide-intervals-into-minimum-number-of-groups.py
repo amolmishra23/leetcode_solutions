@@ -1,5 +1,19 @@
 class Solution:
     def minGroups(self, intervals: List[List[int]]) -> int:
+        delta = [0]*((10**6)+2)
+        
+        for s,e in intervals:
+            delta[s]+=1
+            delta[e+1]-=1
+            
+        res=delta[0]
+        for i in range(1, len(delta)):
+            delta[i]+=delta[i-1]
+            res = max(delta[i], res)
+            
+        return res
+    
+    def minGroups1(self, intervals: List[List[int]]) -> int:
         st = [x for x,_ in intervals]
         et = [x for _,x in intervals]
         
