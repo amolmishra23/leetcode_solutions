@@ -7,11 +7,15 @@ class Solution:
         
         max_rooms, res = 0,0
         
-        for start in st:
-            while et and et[0]<start:
-                et.pop(0)
+        i,j = 0, 0
+        while i<len(intervals):
+            if st[i]<=et[j]:
+                max_rooms+=1
+                i+=1
+            else:
                 max_rooms-=1
-            max_rooms+=1
+                j+=1
+            
             res = max(res, max_rooms)
             
         return res
