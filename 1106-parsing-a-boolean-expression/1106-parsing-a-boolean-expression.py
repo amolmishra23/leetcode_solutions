@@ -5,10 +5,10 @@ class Solution:
         for c in s:
             if c!=")" and c!=",":
                 stk.append(c)
-            elif c == ")":
+            elif c==")":
                 exp = []
                 
-                while stk and stk[-1] != "(":
+                while stk and stk[-1]!="(":
                     exp.append(stk.pop() == "t")
                     
                 stk.pop()
@@ -27,3 +27,4 @@ class Solution:
                     stk.append("t" if res else "f")
                     
         return stk[-1] == "t"
+                    
