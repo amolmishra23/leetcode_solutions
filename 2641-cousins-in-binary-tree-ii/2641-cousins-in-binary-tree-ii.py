@@ -6,30 +6,23 @@
 #         self.right = right
 class Solution:
     def replaceValueInTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        vals, stk = [], [(root, 0)]
+        root.val = 0
+        q = deque(); q.append(root)
         
-        while stk:
-            node, i = stk.pop()
-            if i==len(vals): vals.append(0)
-            vals[i] += node.val
-            if node.left: stk.append((node.left, i+1))
-            if node.right: stk.append((node.right, i+1))
-                
-        stk = [(root,0)]
-        
-        if root: root.val = 0
-            
-        while stk:
-            node, i = stk.pop()
-            child_sum = 0
-            if node.left: 
-                stk.append((node.left, i+1))
-                child_sum += node.left.val
-            if node.right: 
-                stk.append((node.right, i+1))
-                child_sum += node.right.val
-            
-            if node.left: node.left.val = vals[i+1]-child_sum
-            if node.right: node.right.val = vals[i+1]-child_sum
-            
+        while q:
+            levelSum, buffer = 0, deque(q)
+            for _ in range(len(q)):
+                curr = q.popleft()
+                # buffer.append(curr)
+                if curr.left: q.append(curr.left); levelSum += curr.left.val
+                if curr.right: q.append(curr.right); levelSum += curr.right.val
+                    
+            for node in buffer:
+                tmp = levelSum
+                if node.left: tmp-=node.left.val
+                if node.right: tmp-=node.right.val
+                if node.left: node.left.val = tmp
+                if node.right: node.right.val = tmp
+                    
         return root
+        
