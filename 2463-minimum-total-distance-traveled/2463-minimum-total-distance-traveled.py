@@ -1,23 +1,17 @@
 class Solution:
     def minimumTotalDistance(self, robot: List[int], factory: List[List[int]]) -> int:
-        cache = {}
         robot.sort(); factory.sort()
         rlen, flen = len(robot), len(factory)
         
+        @lru_cache(None)
         def knapsack(i, j, cap):
-            key = (i, j, cap) 
-            if key in cache: return cache[key]
-            
             if i==rlen: 
-                cache[key] = 0
-                return cache[key]
+                return 0
             
             if cap==0: 
                 if j+1 < flen:
-                    cache[key] = knapsack(i, j+1, factory[j+1][1])
-                    return cache[key]
-                cache[key] = float("inf")
-                return cache[key]
+                    return knapsack(i, j+1, factory[j+1][1])
+                return float("inf")
             
             res = []
             
@@ -26,7 +20,6 @@ class Solution:
             if j+1<flen:
                 res.append(knapsack(i, j+1, factory[j+1][1]))
             
-            cache[key] = min(res)
-            return cache[key]
+            return min(res)
         
         return knapsack(0, 0, factory[0][1])
