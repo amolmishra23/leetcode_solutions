@@ -1,19 +1,20 @@
 class Solution:
+    def solve(self, arr, k):
+        n = len(arr)
+        if n==0: return [0]*n
+        
+        k_sum = sum(arr[:k])
+        res = []
+        
+        for i in range(n):
+            k_sum -= arr[i]
+            k_sum += arr[(i+k)%n]
+            res.append(k_sum)
+        
+        return res
+    
     def decrypt(self, code: List[int], k: int) -> List[int]:
-        if k==0: return [0]*len(code)
-        swap = False
+        return self.solve(code, k) if k>=0 else list(reversed(self.solve(list(reversed(code)), -k)))
         
-        if k<0: code=code[::-1]; k=-k; swap=True
-        code.extend(code[:k])
         
-        curr_sum, res = 0, []
         
-        for end in range(len(code)):
-            curr_sum += code[end]
-            if end>=k-1:
-                res.append(curr_sum)
-                curr_sum -= code[end-k+1]
-                
-        return res[1:][::-1] if swap else res[1:] 
-                
-                
