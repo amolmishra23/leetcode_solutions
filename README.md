@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2262-solving-questions-with-brainpower](https://github.com/amolmishra23/leetcode_solutions/tree/master/2262-solving-questions-with-brainpower) |
 | [2681-put-marbles-in-bags](https://github.com/amolmishra23/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
+| [3152-maximum-value-of-an-ordered-triplet-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3152-maximum-value-of-an-ordered-triplet-ii) |
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 ## Greedy
 |  |
