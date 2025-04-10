@@ -31,6 +31,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [2262-solving-questions-with-brainpower](https://github.com/amolmishra23/leetcode_solutions/tree/master/2262-solving-questions-with-brainpower) |
+| [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 ## Hash Table
 |  |
 | ------- |
@@ -57,4 +58,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
+| [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
+## String
+|  |
+| ------- |
+| [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 <!---LeetCode Topics End-->
