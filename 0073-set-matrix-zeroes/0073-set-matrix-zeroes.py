@@ -17,6 +17,7 @@ class Solution:
                 if matrix[i][j]==0:
                     matrix[i][0]=0; matrix[0][j]=0; 
 
+        # while substituting 0, we ignore the 0th row and 0th col. Else entire matrix might become 0. 
         for i in range(1, m):
             for j in range(1, n):
                 if matrix[0][j]==0 or matrix[i][0]==0:
