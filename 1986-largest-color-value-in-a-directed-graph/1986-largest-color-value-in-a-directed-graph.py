@@ -1,5 +1,5 @@
 class Solution:
-    def largestPathValue(self, colors: str, edges: List[List[int]]) -> int:
+    def largestPathValue1(self, colors: str, edges: List[List[int]]) -> int:
         graph, indegree, n = defaultdict(list), defaultdict(int), len(colors)
         for u,v in edges: graph[u].append(v); indegree[v]+=1
         count = [[0]*26 for _ in range(n)]
@@ -27,7 +27,7 @@ class Solution:
 
         return res if visited_count==len(colors) else -1
 
-    def largestPathValue1(self, colors: str, edges: List[List[int]]) -> int:
+    def largestPathValue(self, colors: str, edges: List[List[int]]) -> int:
         graph, n = defaultdict(list), len(colors)
         for u,v in edges: graph[u].append(v)
         count = [[0]*26 for _ in range(n)]
@@ -36,7 +36,7 @@ class Solution:
         def dfs(i):
             if i in curr_path: return float("inf")
             if i in visited: return 0
-            curr_path.add(i); visited.add(i)
+            curr_path.add(i)
 
             curr_color = ord(colors[i])-ord("a")
             count[i][curr_color]=1
@@ -50,6 +50,7 @@ class Solution:
                         (1 if c==curr_color else 0) + count[neigh][c],
                     )
             curr_path.remove(i)
+            visited.add(i)
             return max(count[i])
 
         n, res = len(colors), 0
