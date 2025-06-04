@@ -3,9 +3,9 @@ class Solution:
         if numFriends==1: return word
 
         res, n = "", len(word)
-
+        k = n - numFriends + 1
+        
         for i in range(len(word)):
-            k = min(n - i, n - numFriends + 1)
             res = max(res, word[i:i+k])
 
         return res
