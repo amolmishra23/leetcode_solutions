@@ -169,6 +169,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
+| [3617-find-the-original-typed-string-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3617-find-the-original-typed-string-i) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3637-count-number-of-balanced-permutations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
