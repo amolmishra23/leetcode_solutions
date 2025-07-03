@@ -158,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3321-type-of-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/3321-type-of-triangle) |
 | [3548-find-the-count-of-good-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3548-find-the-count-of-good-integers) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3637-count-number-of-balanced-permutations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 | [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/amolmishra23/leetcode_solutions/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
@@ -276,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2048-build-array-from-permutation](https://github.com/amolmishra23/leetcode_solutions/tree/master/2048-build-array-from-permutation) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Graph
 |  |
 | ------- |
@@ -299,6 +301,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/amolmishra23/leetcode_solutions/tree/master/3307-find-the-maximum-sum-of-node-values) |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Topological Sort
 |  |
 | ------- |
@@ -317,4 +320,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0386-lexicographical-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/amolmishra23/leetcode_solutions/tree/master/0440-k-th-smallest-in-lexicographical-order) |
+## Recursion
+|  |
+| ------- |
+| [3600-find-the-k-th-character-in-string-game-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 <!---LeetCode Topics End-->
