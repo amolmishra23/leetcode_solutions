@@ -46,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/amolmishra23/leetcode_solutions/tree/master/3307-find-the-maximum-sum-of-node-values) |
 | [3321-type-of-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/3321-type-of-triangle) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
+| [3491-find-the-maximum-length-of-valid-subsequence-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3491-find-the-maximum-length-of-valid-subsequence-ii) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
@@ -118,6 +119,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/amolmishra23/leetcode_solutions/tree/master/3307-find-the-maximum-sum-of-node-values) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
+| [3491-find-the-maximum-length-of-valid-subsequence-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3491-find-the-maximum-length-of-valid-subsequence-ii) |
 | [3618-find-the-original-typed-string-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3618-find-the-original-typed-string-ii) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3637-count-number-of-balanced-permutations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
