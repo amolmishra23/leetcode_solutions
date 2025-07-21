@@ -199,6 +199,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
+| [1302-delete-characters-to-make-fancy-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/amolmishra23/leetcode_solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
