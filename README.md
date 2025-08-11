@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/amolmishra23/leetcode_solutions/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/amolmishra23/leetcode_solutions/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [2529-range-product-queries-of-powers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2529-range-product-queries-of-powers) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2681-put-marbles-in-bags](https://github.com/amolmishra23/leetcode_solutions/tree/master/2681-put-marbles-in-bags) |
 | [2689-rearranging-fruits](https://github.com/amolmishra23/leetcode_solutions/tree/master/2689-rearranging-fruits) |
@@ -320,6 +321,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/amolmishra23/leetcode_solutions/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2249-count-the-hidden-sequences](https://github.com/amolmishra23/leetcode_solutions/tree/master/2249-count-the-hidden-sequences) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2529-range-product-queries-of-powers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2529-range-product-queries-of-powers) |
 | [3618-find-the-original-typed-string-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3618-find-the-original-typed-string-ii) |
 | [3647-zero-array-transformation-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
@@ -389,6 +391,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/amolmishra23/leetcode_solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2400-minimum-score-after-removals-on-a-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/2400-minimum-score-after-removals-on-a-tree) |
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/amolmishra23/leetcode_solutions/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
+| [2529-range-product-queries-of-powers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2529-range-product-queries-of-powers) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/amolmishra23/leetcode_solutions/tree/master/3307-find-the-maximum-sum-of-node-values) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 ## Topological Sort
