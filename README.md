@@ -18,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/amolmishra23/leetcode_solutions/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/amolmishra23/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/amolmishra23/leetcode_solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/amolmishra23/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/amolmishra23/leetcode_solutions/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1510-find-lucky-integer-in-an-array) |
@@ -133,6 +134,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0806-domino-and-tromino-tiling](https://github.com/amolmishra23/leetcode_solutions/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/amolmishra23/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
@@ -381,6 +383,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
 | [0945-snakes-and-ladders](https://github.com/amolmishra23/leetcode_solutions/tree/master/0945-snakes-and-ladders) |
+| [1402-count-square-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
