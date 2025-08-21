@@ -22,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/amolmishra23/leetcode_solutions/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/amolmishra23/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1656-count-good-triplets](https://github.com/amolmishra23/leetcode_solutions/tree/master/1656-count-good-triplets) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2048-build-array-from-permutation](https://github.com/amolmishra23/leetcode_solutions/tree/master/2048-build-array-from-permutation) |
@@ -132,6 +133,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0806-domino-and-tromino-tiling](https://github.com/amolmishra23/leetcode_solutions/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
+| [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/amolmishra23/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2028-the-earliest-and-latest-rounds-where-players-compete](https://github.com/amolmishra23/leetcode_solutions/tree/master/2028-the-earliest-and-latest-rounds-where-players-compete) |
@@ -379,6 +381,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0073-set-matrix-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
 | [0945-snakes-and-ladders](https://github.com/amolmishra23/leetcode_solutions/tree/master/0945-snakes-and-ladders) |
+| [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Shortest Path
@@ -430,9 +433,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/1818-maximum-score-from-removing-substrings) |
 ## Backtracking
 |  |
 | ------- |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/amolmishra23/leetcode_solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+## Monotonic Stack
+|  |
+| ------- |
+| [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 <!---LeetCode Topics End-->
