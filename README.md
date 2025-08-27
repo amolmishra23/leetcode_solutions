@@ -70,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3647-zero-array-transformation-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/amolmishra23/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/amolmishra23/leetcode_solutions/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/amolmishra23/leetcode_solutions/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
@@ -156,6 +157,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3618-find-the-original-typed-string-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3618-find-the-original-typed-string-ii) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3637-count-number-of-balanced-permutations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
+| [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/amolmishra23/leetcode_solutions/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 ## Hash Table
 |  |
 | ------- |
@@ -394,6 +396,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/amolmishra23/leetcode_solutions/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 ## Shortest Path
 |  |
 | ------- |
@@ -420,6 +423,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/amolmishra23/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2028-the-earliest-and-latest-rounds-where-players-compete](https://github.com/amolmishra23/leetcode_solutions/tree/master/2028-the-earliest-and-latest-rounds-where-players-compete) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
+| [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/amolmishra23/leetcode_solutions/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 ## Union Find
 |  |
 | ------- |
