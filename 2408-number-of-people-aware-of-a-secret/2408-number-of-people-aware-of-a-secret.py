@@ -3,10 +3,10 @@ class Solution:
         # Buffer size to avoid index out of bounds
         buffer_size = (n << 1) + 10  # n * 2 + 10
         
-        # Track people who currently know the secret at each day
+        # Track exact people knowing secret on certain day
         people_knowing_secret = [0] * buffer_size
         
-        # Track new people learning the secret each day
+        # Track what new people know secret on each day
         new_people_each_day = [0] * buffer_size
         
         # Day 1: one person initially knows the secret
