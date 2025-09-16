@@ -44,6 +44,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2267-minimum-difference-in-sums-after-removal-of-elements](https://github.com/amolmishra23/leetcode_solutions/tree/master/2267-minimum-difference-in-sums-after-removal-of-elements) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2280-count-good-triplets-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2280-count-good-triplets-in-an-array) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2316-count-hills-and-valleys-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2316-count-hills-and-valleys-in-an-array) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
@@ -239,6 +240,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/amolmishra23/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1440-convert-integer-to-the-sum-of-two-no-zero-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/1440-convert-integer-to-the-sum-of-two-no-zero-integers) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
 | [2998-count-symmetric-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2998-count-symmetric-integers) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/amolmishra23/leetcode_solutions/tree/master/3172-divisible-and-non-divisible-sums-difference) |
@@ -368,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Number Theory
 |  |
 | ------- |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
 ## Queue
 |  |
@@ -483,6 +486,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/1818-maximum-score-from-removing-substrings) |
+| [2307-replace-non-coprime-numbers-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 ## Backtracking
 |  |
 | ------- |
