@@ -85,6 +85,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/amolmishra23/leetcode_solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3790-fruits-into-baskets-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3791-fruits-into-baskets-iii) |
+| [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 ## Greedy
 |  |
 | ------- |
@@ -200,6 +201,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/amolmishra23/leetcode_solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/amolmishra23/leetcode_solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/amolmishra23/leetcode_solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Tree
 |  |
@@ -320,6 +322,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/amolmishra23/leetcode_solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [3790-fruits-into-baskets-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3791-fruits-into-baskets-iii) |
+| [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -345,6 +348,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3678-design-task-manager](https://github.com/amolmishra23/leetcode_solutions/tree/master/3678-design-task-manager) |
 | [3790-fruits-into-baskets-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3791-fruits-into-baskets-iii) |
+| [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 ## Sliding Window
 |  |
 | ------- |
@@ -381,6 +385,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/amolmishra23/leetcode_solutions/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2408-number-of-people-aware-of-a-secret](https://github.com/amolmishra23/leetcode_solutions/tree/master/2408-number-of-people-aware-of-a-secret) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/amolmishra23/leetcode_solutions/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 ## Monotonic Queue
 |  |
 | ------- |
@@ -511,4 +516,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3678-design-task-manager](https://github.com/amolmishra23/leetcode_solutions/tree/master/3678-design-task-manager) |
+| [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 <!---LeetCode Topics End-->
