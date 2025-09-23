@@ -269,6 +269,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0165-compare-version-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0165-compare-version-numbers) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1006-vowel-spellchecker](https://github.com/amolmishra23/leetcode_solutions/tree/master/1006-vowel-spellchecker) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
@@ -400,6 +401,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0165-compare-version-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0165-compare-version-numbers) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/amolmishra23/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
