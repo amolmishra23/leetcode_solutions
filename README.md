@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0594-longest-harmonious-subsequence](https://github.com/amolmishra23/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/0611-valid-triangle-number) |
 | [0797-rabbits-in-forest](https://github.com/amolmishra23/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
+| [0830-largest-triangle-area](https://github.com/amolmishra23/leetcode_solutions/tree/master/0830-largest-triangle-area) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
 | [0940-fruit-into-baskets](https://github.com/amolmishra23/leetcode_solutions/tree/master/0940-fruit-into-baskets) |
 | [0945-snakes-and-ladders](https://github.com/amolmishra23/leetcode_solutions/tree/master/0945-snakes-and-ladders) |
@@ -251,6 +252,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0326-power-of-three](https://github.com/amolmishra23/leetcode_solutions/tree/master/0326-power-of-three) |
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0797-rabbits-in-forest](https://github.com/amolmishra23/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
+| [0830-largest-triangle-area](https://github.com/amolmishra23/leetcode_solutions/tree/master/0830-largest-triangle-area) |
 | [0900-reordered-power-of-2](https://github.com/amolmishra23/leetcode_solutions/tree/master/0900-reordered-power-of-2) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/amolmishra23/leetcode_solutions/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/amolmishra23/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
@@ -526,6 +528,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Geometry
 |  |
 | ------- |
+| [0830-largest-triangle-area](https://github.com/amolmishra23/leetcode_solutions/tree/master/0830-largest-triangle-area) |
 | [3277-find-the-number-of-ways-to-place-people-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3277-find-the-number-of-ways-to-place-people-ii) |
 ## Brainteaser
 |  |
