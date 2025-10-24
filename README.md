@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1612-avoid-flood-in-the-city](https://github.com/amolmishra23/leetcode_solutions/tree/master/1612-avoid-flood-in-the-city) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/amolmishra23/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2023-design-movie-rental-system](https://github.com/amolmishra23/leetcode_solutions/tree/master/2023-design-movie-rental-system) |
+| [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/amolmishra23/leetcode_solutions/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2215-finding-3-digit-even-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2215-finding-3-digit-even-numbers) |
 | [2479-meeting-rooms-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/2479-meeting-rooms-iii) |
@@ -304,6 +305,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1440-convert-integer-to-the-sum-of-two-no-zero-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/1440-convert-integer-to-the-sum-of-two-no-zero-integers) |
 | [1642-water-bottles](https://github.com/amolmishra23/leetcode_solutions/tree/master/1642-water-bottles) |
+| [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2307-replace-non-coprime-numbers-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2307-replace-non-coprime-numbers-in-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/2415-count-the-number-of-ideal-arrays) |
@@ -364,6 +366,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1656-count-good-triplets](https://github.com/amolmishra23/leetcode_solutions/tree/master/1656-count-good-triplets) |
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/amolmishra23/leetcode_solutions/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/amolmishra23/leetcode_solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 | [2215-finding-3-digit-even-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2215-finding-3-digit-even-numbers) |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
 | [2998-count-symmetric-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2998-count-symmetric-integers) |
@@ -499,6 +502,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1227-number-of-equivalent-domino-pairs](https://github.com/amolmishra23/leetcode_solutions/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/amolmishra23/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/amolmishra23/leetcode_solutions/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/amolmishra23/leetcode_solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
@@ -605,6 +609,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0037-sudoku-solver](https://github.com/amolmishra23/leetcode_solutions/tree/master/0037-sudoku-solver) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/amolmishra23/leetcode_solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+| [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 ## Monotonic Stack
 |  |
 | ------- |
