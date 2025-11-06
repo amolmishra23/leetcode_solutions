@@ -119,6 +119,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/amolmishra23/leetcode_solutions/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 | [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
 | [3851-find-sum-of-array-product-of-magical-sequences](https://github.com/amolmishra23/leetcode_solutions/tree/master/3851-find-sum-of-array-product-of-magical-sequences) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Greedy
 |  |
 | ------- |
@@ -195,6 +196,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3647-zero-array-transformation-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 | [3678-design-task-manager](https://github.com/amolmishra23/leetcode_solutions/tree/master/3678-design-task-manager) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -275,6 +277,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/amolmishra23/leetcode_solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/amolmishra23/leetcode_solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/amolmishra23/leetcode_solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Tree
 |  |
@@ -296,6 +299,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/amolmishra23/leetcode_solutions/tree/master/2438-find-closest-node-to-given-two-nodes) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -306,6 +310,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1747-lexicographically-smallest-string-after-applying-operations](https://github.com/amolmishra23/leetcode_solutions/tree/master/1747-lexicographically-smallest-string-after-applying-operations) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Binary Tree
 |  |
 | ------- |
@@ -462,6 +467,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3790-fruits-into-baskets-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3791-fruits-into-baskets-iii) |
 | [3827-implement-router](https://github.com/amolmishra23/leetcode_solutions/tree/master/3827-implement-router) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Sliding Window
 |  |
 | ------- |
@@ -564,6 +570,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/amolmishra23/leetcode_solutions/tree/master/2438-find-closest-node-to-given-two-nodes) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Matrix
 |  |
 | ------- |
@@ -618,6 +625,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
+| [3863-power-grid-maintenance](https://github.com/amolmishra23/leetcode_solutions/tree/master/3863-power-grid-maintenance) |
 ## Trie
 |  |
 | ------- |
