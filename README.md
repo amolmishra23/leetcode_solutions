@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0407-trapping-rain-water-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/amolmishra23/leetcode_solutions/tree/master/0417-pacific-atlantic-water-flow) |
+| [0474-ones-and-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0474-ones-and-zeroes) |
 | [0498-diagonal-traverse](https://github.com/amolmishra23/leetcode_solutions/tree/master/0498-diagonal-traverse) |
 | [0594-longest-harmonious-subsequence](https://github.com/amolmishra23/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/0611-valid-triangle-number) |
@@ -207,6 +208,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0118-pascals-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0120-triangle) |
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
+| [0474-ones-and-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0474-ones-and-zeroes) |
 | [0806-domino-and-tromino-tiling](https://github.com/amolmishra23/leetcode_solutions/tree/master/0806-domino-and-tromino-tiling) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
@@ -370,6 +372,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0165-compare-version-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/amolmishra23/leetcode_solutions/tree/master/0166-fraction-to-recurring-decimal) |
+| [0474-ones-and-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0474-ones-and-zeroes) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1006-vowel-spellchecker](https://github.com/amolmishra23/leetcode_solutions/tree/master/1006-vowel-spellchecker) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1058-lexicographically-smallest-equivalent-string) |
