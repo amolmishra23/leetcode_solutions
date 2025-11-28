@@ -1,31 +1,20 @@
 class Solution:
-    def maxKDivisibleComponents(self, n, edges, values, k) -> int:
+    def maxKDivisibleComponents(self, n: int, edges: List[List[int]], values: List[int], k: int) -> int:
+        adj = [[] for _ in range(n)]
+        for a, b in edges:
+            adj[a].append(b)
+            adj[b].append(a)
 
-        if n <= 1 : return 1
-        
-        count = 0
+        self.ans = 0
 
-        # build adjacency map
-        G = defaultdict(set)
-        for u,v in edges: G[u].add(v), G[v].add(u)
-        
-        # start with leaves
-        Q = deque(u for u, vs in G.items() if len(vs) == 1)
-        
-        # cut leaves layer by layer
-        while Q:
-            for _ in range(len(Q)):
-                u = Q.popleft()
-                
-                # get u's parent and remove u from its children
-                p = next(iter(G[u])) if G[u] else -1
-                if p >= 0 : G[p].remove(u)
-                
-                # either separate a correct component or add to parent
-                if values[u] % k == 0 : count += 1
-                else                  : values[p] += values[u]
+        def dfs(node, parent):
+            s = values[node]
+            for nxt in adj[node]:
+                if nxt != parent:
+                    s += dfs(nxt, node)
+            if s % k == 0:
+                self.ans += 1
+            return s % k
 
-                # update queue with new leaves
-                if p >= 0 and len(G[p]) == 1 : Q.append(p)
-
-        return count
+        dfs(0, -1)
+        return self.ans
