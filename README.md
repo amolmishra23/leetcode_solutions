@@ -375,6 +375,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/amolmishra23/leetcode_solutions/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1440-convert-integer-to-the-sum-of-two-no-zero-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/1440-convert-integer-to-the-sum-of-two-no-zero-integers) |
+| [1523-count-odd-numbers-in-an-interval-range](https://github.com/amolmishra23/leetcode_solutions/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/amolmishra23/leetcode_solutions/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1642-water-bottles](https://github.com/amolmishra23/leetcode_solutions/tree/master/1642-water-bottles) |
 | [1817-calculate-money-in-leetcode-bank](https://github.com/amolmishra23/leetcode_solutions/tree/master/1817-calculate-money-in-leetcode-bank) |
