@@ -483,6 +483,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/amolmishra23/leetcode_solutions/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2346-largest-3-same-digit-number-in-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/2346-largest-3-same-digit-number-in-string) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/amolmishra23/leetcode_solutions/tree/master/2483-minimum-penalty-for-a-shop) |
 | [3142-longest-unequal-adjacent-groups-subsequence-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3142-longest-unequal-adjacent-groups-subsequence-ii) |
 | [3233-maximize-the-number-of-partitions-after-operations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3233-maximize-the-number-of-partitions-after-operations) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3243-count-the-number-of-powerful-integers) |
@@ -612,6 +613,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/amolmishra23/leetcode_solutions/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2249-count-the-hidden-sequences](https://github.com/amolmishra23/leetcode_solutions/tree/master/2249-count-the-hidden-sequences) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2483-minimum-penalty-for-a-shop](https://github.com/amolmishra23/leetcode_solutions/tree/master/2483-minimum-penalty-for-a-shop) |
 | [2529-range-product-queries-of-powers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2529-range-product-queries-of-powers) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/amolmishra23/leetcode_solutions/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2625-increment-submatrices-by-one](https://github.com/amolmishra23/leetcode_solutions/tree/master/2625-increment-submatrices-by-one) |
