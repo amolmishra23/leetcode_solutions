@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0759-set-intersection-size-at-least-two](https://github.com/amolmishra23/leetcode_solutions/tree/master/0759-set-intersection-size-at-least-two) |
 | [0797-rabbits-in-forest](https://github.com/amolmishra23/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [0830-largest-triangle-area](https://github.com/amolmishra23/leetcode_solutions/tree/master/0830-largest-triangle-area) |
+| [0840-magic-squares-in-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
 | [0940-fruit-into-baskets](https://github.com/amolmishra23/leetcode_solutions/tree/master/0940-fruit-into-baskets) |
 | [0944-delete-columns-to-make-sorted](https://github.com/amolmishra23/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
@@ -313,6 +314,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0166-fraction-to-recurring-decimal](https://github.com/amolmishra23/leetcode_solutions/tree/master/0166-fraction-to-recurring-decimal) |
 | [0594-longest-harmonious-subsequence](https://github.com/amolmishra23/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0797-rabbits-in-forest](https://github.com/amolmishra23/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
+| [0840-magic-squares-in-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
 | [0900-reordered-power-of-2](https://github.com/amolmishra23/leetcode_solutions/tree/master/0900-reordered-power-of-2) |
 | [0940-fruit-into-baskets](https://github.com/amolmishra23/leetcode_solutions/tree/master/0940-fruit-into-baskets) |
 | [1006-vowel-spellchecker](https://github.com/amolmishra23/leetcode_solutions/tree/master/1006-vowel-spellchecker) |
@@ -412,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
 | [0797-rabbits-in-forest](https://github.com/amolmishra23/leetcode_solutions/tree/master/0797-rabbits-in-forest) |
 | [0830-largest-triangle-area](https://github.com/amolmishra23/leetcode_solutions/tree/master/0830-largest-triangle-area) |
+| [0840-magic-squares-in-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
 | [0900-reordered-power-of-2](https://github.com/amolmishra23/leetcode_solutions/tree/master/0900-reordered-power-of-2) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1018-largest-perimeter-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/1018-largest-perimeter-triangle) |
@@ -726,6 +729,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0407-trapping-rain-water-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/amolmishra23/leetcode_solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0498-diagonal-traverse](https://github.com/amolmishra23/leetcode_solutions/tree/master/0498-diagonal-traverse) |
+| [0840-magic-squares-in-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/0840-magic-squares-in-grid) |
 | [0945-snakes-and-ladders](https://github.com/amolmishra23/leetcode_solutions/tree/master/0945-snakes-and-ladders) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/amolmishra23/leetcode_solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1402-count-square-submatrices-with-all-ones) |
