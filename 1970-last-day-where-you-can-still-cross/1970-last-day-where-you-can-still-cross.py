@@ -1,41 +1,46 @@
-class DSU:
-    def __init__(self):
-        self.p = {}
-
-    def find(self, x):
-        self.p.setdefault(x, x)
-        if self.p[x] != x:
-            self.p[x] = self.find(self.p[x])
-        return self.p[x]
-
-    def union(self, x, y):
-        xr = self.find(x)
-        yr = self.find(y)
-        self.p[xr] = yr
-
 class Solution:
-    def latestDayToCross(self, n, m, C):
-        dsu = DSU()
-        grid = [[1 for _ in range(m)] for _ in range(n)]
-        neibs = [[0,1],[0,-1],[1,0],[-1,0]]
-        C = [(x-1, y-1) for x, y in C]
+    def latestDayToCross(self, row: int, col: int, cells: List[List[int]]) -> int:
+        n = row * col
+        top, bottom = n, n + 1
 
-        def index(x, y):
-            # We are hoping for indexing to be 1 based
-            # And 0, m*n+1 are for ceil and floor respectively. 
-            return x * m + y + 1
+        parent = list(range(n + 2))
+        rank = [0] * (n + 2)
+        grid = [[False] * col for _ in range(row)]
 
-        for i in range(len(C) - 1, -1, -1):
-            x, y = C[i]
-            grid[x][y] = 0
-            for dx, dy in neibs:
-                nx, ny = x+dx, y+dy
-                ind = index(nx, ny)
-                if 0<=nx<n and 0<=ny<m and grid[x+dx][y+dy] == 0:
-                    dsu.union(ind, index(x, y))
-            if x == 0:
-                dsu.union(0, index(x, y))
-            if x == n - 1:
-                dsu.union(m*n + 1, index(x, y))
-            if dsu.find(0) == dsu.find(m*n + 1):
-                return i
+        def find(x):
+            if parent[x] != x:
+                parent[x] = find(parent[x])
+            return parent[x]
+
+        def union(a, b):
+            a, b = find(a), find(b)
+            if a == b:
+                return
+            if rank[a] < rank[b]:
+                parent[a] = b
+            else:
+                parent[b] = a
+                if rank[a] == rank[b]:
+                    rank[a] += 1
+
+        dr = [1, -1, 0, 0]
+        dc = [0, 0, 1, -1]
+
+        for d in range(n - 1, -1, -1):
+            r, c = cells[d][0] - 1, cells[d][1] - 1
+            grid[r][c] = True
+            idx = r * col + c
+
+            if r == 0:
+                union(idx, top)
+            if r == row - 1:
+                union(idx, bottom)
+
+            for k in range(4):
+                nr, nc = r + dr[k], c + dc[k]
+                if 0 <= nr < row and 0 <= nc < col and grid[nr][nc]:
+                    union(idx, nr * col + nc)
+
+            if find(top) == find(bottom):
+                return d
+        return 0
