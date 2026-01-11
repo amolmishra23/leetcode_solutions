@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0037-sudoku-solver](https://github.com/amolmishra23/leetcode_solutions/tree/master/0037-sudoku-solver) |
 | [0066-plus-one](https://github.com/amolmishra23/leetcode_solutions/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
+| [0085-maximal-rectangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0120-triangle) |
 | [0135-candy](https://github.com/amolmishra23/leetcode_solutions/tree/master/0135-candy) |
@@ -266,6 +267,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0085-maximal-rectangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0120-triangle) |
 | [0368-largest-divisible-subset](https://github.com/amolmishra23/leetcode_solutions/tree/master/0368-largest-divisible-subset) |
@@ -737,6 +739,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0036-valid-sudoku](https://github.com/amolmishra23/leetcode_solutions/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/amolmishra23/leetcode_solutions/tree/master/0037-sudoku-solver) |
 | [0073-set-matrix-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0073-set-matrix-zeroes) |
+| [0085-maximal-rectangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0085-maximal-rectangle) |
 | [0407-trapping-rain-water-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/amolmishra23/leetcode_solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0498-diagonal-traverse](https://github.com/amolmishra23/leetcode_solutions/tree/master/0498-diagonal-traverse) |
@@ -816,6 +819,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0085-maximal-rectangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0085-maximal-rectangle) |
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/1818-maximum-score-from-removing-substrings) |
@@ -831,6 +835,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Monotonic Stack
 |  |
 | ------- |
+| [0085-maximal-rectangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/0085-maximal-rectangle) |
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
