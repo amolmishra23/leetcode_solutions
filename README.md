@@ -174,6 +174,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/amolmishra23/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/amolmishra23/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/amolmishra23/leetcode_solutions/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/amolmishra23/leetcode_solutions/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
@@ -412,6 +413,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/amolmishra23/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-design-task-manager](https://github.com/amolmishra23/leetcode_solutions/tree/master/3678-design-task-manager) |
+| [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/amolmishra23/leetcode_solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/amolmishra23/leetcode_solutions/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
@@ -645,6 +647,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [1382-balance-a-binary-search-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2280-count-good-triplets-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2280-count-good-triplets-in-an-array) |
+| [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
 ## Binary Indexed Tree
 |  |
 | ------- |
@@ -654,6 +657,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [2280-count-good-triplets-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2280-count-good-triplets-in-an-array) |
 | [3454-separate-squares-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3454-separate-squares-ii) |
+| [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
 | [3790-fruits-into-baskets-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3791-fruits-into-baskets-iii) |
 ## Merge Sort
@@ -719,6 +723,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 | [3647-zero-array-transformation-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/amolmishra23/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
+| [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 | [3794-find-the-minimum-amount-of-time-to-brew-potions](https://github.com/amolmishra23/leetcode_solutions/tree/master/3794-find-the-minimum-amount-of-time-to-brew-potions) |
 ## Number Theory
