@@ -414,6 +414,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/amolmishra23/leetcode_solutions/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
 | [3678-design-task-manager](https://github.com/amolmishra23/leetcode_solutions/tree/master/3678-design-task-manager) |
+| [3713-longest-balanced-substring-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
 | [3721-longest-balanced-subarray-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3721-longest-balanced-subarray-ii) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
@@ -577,6 +578,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3637-count-number-of-balanced-permutations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3637-count-number-of-balanced-permutations) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [3713-longest-balanced-substring-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/amolmishra23/leetcode_solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
@@ -601,6 +603,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3479-count-the-number-of-substrings-with-dominant-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/3479-count-the-number-of-substrings-with-dominant-ones) |
 | [3548-find-the-count-of-good-integers](https://github.com/amolmishra23/leetcode_solutions/tree/master/3548-find-the-count-of-good-integers) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [3713-longest-balanced-substring-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Combinatorics
@@ -780,6 +783,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3493-maximum-number-of-operations-to-move-ones-to-the-end](https://github.com/amolmishra23/leetcode_solutions/tree/master/3493-maximum-number-of-operations-to-move-ones-to-the-end) |
 | [3583-count-special-triplets](https://github.com/amolmishra23/leetcode_solutions/tree/master/3583-count-special-triplets) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3629-total-characters-in-string-after-transformations-i) |
+| [3713-longest-balanced-substring-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3713-longest-balanced-substring-i) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/amolmishra23/leetcode_solutions/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/amolmishra23/leetcode_solutions/tree/master/3872-find-most-frequent-vowel-and-consonant) |
