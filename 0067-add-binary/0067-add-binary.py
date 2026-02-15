@@ -1,14 +1,17 @@
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
+        res, carry = [], 0
         i, j = len(a)-1, len(b)-1
-        res, carry = deque(), 0
-        
-        while i>=0 or j>=0:
-            if i>=0 and a[i]=="1": carry+=1
-            if j>=0 and b[j]=="1": carry+=1
-            i, j = i-1, j-1
-            carry, rem = divmod(carry, 2)
-            res.appendleft(str(rem))
-        
-        if carry: res.appendleft(str(carry))
-        return "".join(res)
+
+        while i>=0 or j>=0 or carry:
+            digit_a = int(a[i]) if i>=0 else 0
+            digit_b = int(b[j]) if j>=0 else 0
+
+            total = digit_a + digit_b + carry
+
+            res.append(str(total%2))
+            carry = total//2
+
+            i-=1; j-=1
+
+        return "".join(reversed(res))
