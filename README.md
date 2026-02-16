@@ -655,6 +655,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Divide and Conquer
 |  |
 | ------- |
+| [0190-reverse-bits](https://github.com/amolmishra23/leetcode_solutions/tree/master/0190-reverse-bits) |
 | [1382-balance-a-binary-search-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2280-count-good-triplets-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2280-count-good-triplets-in-an-array) |
 | [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
@@ -868,6 +869,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/amolmishra23/leetcode_solutions/tree/master/0067-add-binary) |
+| [0190-reverse-bits](https://github.com/amolmishra23/leetcode_solutions/tree/master/0190-reverse-bits) |
 | [0231-power-of-two](https://github.com/amolmishra23/leetcode_solutions/tree/master/0231-power-of-two) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/amolmishra23/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
