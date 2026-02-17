@@ -871,6 +871,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0067-add-binary](https://github.com/amolmishra23/leetcode_solutions/tree/master/0067-add-binary) |
 | [0190-reverse-bits](https://github.com/amolmishra23/leetcode_solutions/tree/master/0190-reverse-bits) |
 | [0231-power-of-two](https://github.com/amolmishra23/leetcode_solutions/tree/master/0231-power-of-two) |
+| [0401-binary-watch](https://github.com/amolmishra23/leetcode_solutions/tree/master/0401-binary-watch) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/amolmishra23/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1732-minimum-one-bit-operations-to-make-integers-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/1732-minimum-one-bit-operations-to-make-integers-zero) |
@@ -941,6 +942,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/amolmishra23/leetcode_solutions/tree/master/0037-sudoku-solver) |
+| [0401-binary-watch](https://github.com/amolmishra23/leetcode_solutions/tree/master/0401-binary-watch) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/amolmishra23/leetcode_solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 ## Monotonic Stack
