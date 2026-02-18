@@ -872,6 +872,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0190-reverse-bits](https://github.com/amolmishra23/leetcode_solutions/tree/master/0190-reverse-bits) |
 | [0231-power-of-two](https://github.com/amolmishra23/leetcode_solutions/tree/master/0231-power-of-two) |
 | [0401-binary-watch](https://github.com/amolmishra23/leetcode_solutions/tree/master/0401-binary-watch) |
+| [0693-binary-number-with-alternating-bits](https://github.com/amolmishra23/leetcode_solutions/tree/master/0693-binary-number-with-alternating-bits) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/amolmishra23/leetcode_solutions/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/amolmishra23/leetcode_solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1732-minimum-one-bit-operations-to-make-integers-zero](https://github.com/amolmishra23/leetcode_solutions/tree/master/1732-minimum-one-bit-operations-to-make-integers-zero) |
