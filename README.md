@@ -544,6 +544,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0165-compare-version-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/amolmishra23/leetcode_solutions/tree/master/0166-fraction-to-recurring-decimal) |
 | [0474-ones-and-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0474-ones-and-zeroes) |
+| [0696-count-binary-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/0696-count-binary-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/amolmishra23/leetcode_solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0944-delete-columns-to-make-sorted](https://github.com/amolmishra23/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
@@ -769,6 +770,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0011-container-with-most-water](https://github.com/amolmishra23/leetcode_solutions/tree/master/0011-container-with-most-water) |
 | [0165-compare-version-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0165-compare-version-numbers) |
 | [0611-valid-triangle-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/0611-valid-triangle-number) |
+| [0696-count-binary-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/0696-count-binary-substrings) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/amolmishra23/leetcode_solutions/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
