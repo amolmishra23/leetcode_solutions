@@ -238,6 +238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0594-longest-harmonious-subsequence](https://github.com/amolmishra23/leetcode_solutions/tree/master/0594-longest-harmonious-subsequence) |
 | [0611-valid-triangle-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/0611-valid-triangle-number) |
 | [0759-set-intersection-size-at-least-two](https://github.com/amolmishra23/leetcode_solutions/tree/master/0759-set-intersection-size-at-least-two) |
+| [0761-special-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/0761-special-binary-string) |
 | [0900-reordered-power-of-2](https://github.com/amolmishra23/leetcode_solutions/tree/master/0900-reordered-power-of-2) |
 | [1018-largest-perimeter-triangle](https://github.com/amolmishra23/leetcode_solutions/tree/master/1018-largest-perimeter-triangle) |
 | [1200-minimum-absolute-difference](https://github.com/amolmishra23/leetcode_solutions/tree/master/1200-minimum-absolute-difference) |
@@ -546,6 +547,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0474-ones-and-zeroes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0474-ones-and-zeroes) |
 | [0696-count-binary-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/0696-count-binary-substrings) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/amolmishra23/leetcode_solutions/tree/master/0712-minimum-ascii-delete-sum-for-two-strings) |
+| [0761-special-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/0761-special-binary-string) |
 | [0868-push-dominoes](https://github.com/amolmishra23/leetcode_solutions/tree/master/0868-push-dominoes) |
 | [0944-delete-columns-to-make-sorted](https://github.com/amolmishra23/leetcode_solutions/tree/master/0944-delete-columns-to-make-sorted) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/0955-delete-columns-to-make-sorted-ii) |
@@ -657,6 +659,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0190-reverse-bits](https://github.com/amolmishra23/leetcode_solutions/tree/master/0190-reverse-bits) |
+| [0761-special-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/0761-special-binary-string) |
 | [1382-balance-a-binary-search-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2280-count-good-triplets-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2280-count-good-triplets-in-an-array) |
 | [3719-longest-balanced-subarray-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3719-longest-balanced-subarray-i) |
