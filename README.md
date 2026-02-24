@@ -432,6 +432,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0110-balanced-binary-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/0110-balanced-binary-tree) |
+| [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/amolmishra23/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1382-balance-a-binary-search-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/1382-balance-a-binary-search-tree) |
 | [2400-minimum-score-after-removals-on-a-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/2400-minimum-score-after-removals-on-a-tree) |
@@ -446,6 +447,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0110-balanced-binary-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/0110-balanced-binary-tree) |
 | [0386-lexicographical-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/0386-lexicographical-numbers) |
 | [0417-pacific-atlantic-water-flow](https://github.com/amolmishra23/leetcode_solutions/tree/master/0417-pacific-atlantic-water-flow) |
+| [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/amolmishra23/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/amolmishra23/leetcode_solutions/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1382-balance-a-binary-search-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/1382-balance-a-binary-search-tree) |
@@ -474,6 +476,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0110-balanced-binary-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/0110-balanced-binary-tree) |
+| [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/amolmishra23/leetcode_solutions/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/amolmishra23/leetcode_solutions/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1382-balance-a-binary-search-tree](https://github.com/amolmishra23/leetcode_solutions/tree/master/1382-balance-a-binary-search-tree) |
 ## Math
