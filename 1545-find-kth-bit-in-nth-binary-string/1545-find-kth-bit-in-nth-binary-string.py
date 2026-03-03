@@ -1,17 +1,15 @@
 class Solution:
     def findKthBit(self, n: int, k: int) -> str:
-        length = 2**n - 1
+        if n == 1:
+            return '0'
         
-        def helper(length, k):
-            if length == 1: return "0"
-            
-            half = length // 2
-            if k<=half:
-                return helper(half, k)
-            elif k>half+1:
-                res = helper(half, length - k + 1)
-                return "0" if res=="1" else "1"
-            else:
-                return "1"
-            
-        return helper(length, k)
+        length = (1 << n) - 1
+        mid = (length + 1) // 2
+        
+        if k == mid:
+            return '1'
+        if k < mid:
+            return self.findKthBit(n - 1, k)
+        
+        c = self.findKthBit(n - 1, length - k + 1)
+        return '1' if c == '0' else '0'
