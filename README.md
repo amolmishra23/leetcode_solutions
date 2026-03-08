@@ -69,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1895-largest-magic-square](https://github.com/amolmishra23/leetcode_solutions/tree/master/1895-largest-magic-square) |
 | [1975-maximum-matrix-sum](https://github.com/amolmishra23/leetcode_solutions/tree/master/1975-maximum-matrix-sum) |
+| [1980-find-unique-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1980-find-unique-binary-string) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/amolmishra23/leetcode_solutions/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
 | [2023-design-movie-rental-system](https://github.com/amolmishra23/leetcode_solutions/tree/master/2023-design-movie-rental-system) |
 | [2048-build-array-from-permutation](https://github.com/amolmishra23/leetcode_solutions/tree/master/2048-build-array-from-permutation) |
@@ -389,6 +390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/1461-check-if-a-string-contains-all-binary-codes-of-size-k) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1612-avoid-flood-in-the-city](https://github.com/amolmishra23/leetcode_solutions/tree/master/1612-avoid-flood-in-the-city) |
+| [1980-find-unique-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1980-find-unique-binary-string) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/amolmishra23/leetcode_solutions/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2023-design-movie-rental-system](https://github.com/amolmishra23/leetcode_solutions/tree/master/2023-design-movie-rental-system) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/amolmishra23/leetcode_solutions/tree/master/2059-unique-length-3-palindromic-subsequences) |
@@ -583,6 +585,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1784-check-if-binary-string-has-at-most-one-segment-of-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1784-check-if-binary-string-has-at-most-one-segment-of-ones) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/amolmishra23/leetcode_solutions/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1888-minimum-number-of-flips-to-make-the-binary-string-alternating](https://github.com/amolmishra23/leetcode_solutions/tree/master/1888-minimum-number-of-flips-to-make-the-binary-string-alternating) |
+| [1980-find-unique-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1980-find-unique-binary-string) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/amolmishra23/leetcode_solutions/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/amolmishra23/leetcode_solutions/tree/master/2137-final-value-of-variable-after-performing-operations) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/amolmishra23/leetcode_solutions/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
@@ -983,6 +986,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0037-sudoku-solver](https://github.com/amolmishra23/leetcode_solutions/tree/master/0037-sudoku-solver) |
 | [0401-binary-watch](https://github.com/amolmishra23/leetcode_solutions/tree/master/0401-binary-watch) |
+| [1980-find-unique-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1980-find-unique-binary-string) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/amolmishra23/leetcode_solutions/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2174-next-greater-numerically-balanced-number](https://github.com/amolmishra23/leetcode_solutions/tree/master/2174-next-greater-numerically-balanced-number) |
 ## Monotonic Stack
