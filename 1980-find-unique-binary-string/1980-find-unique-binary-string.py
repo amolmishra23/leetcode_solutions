@@ -1,3 +1,16 @@
 class Solution:
     def findDifferentBinaryString(self, nums: List[str]) -> str:
-        return "".join(["0" if ch[i]=="1" else "1" for i, ch in enumerate(nums)])
+        n = len(nums[0])
+        nums = set(nums)
+
+        def backtrack(i, curr):
+            if i==n:
+                return "".join(curr) if "".join(curr) not in nums else ""
+                
+            for ch in ["0", "1"]:
+                res = backtrack(i+1, curr+[ch])
+                if len(res)!=0: return res
+
+            return ""
+
+        return backtrack(0, [])
