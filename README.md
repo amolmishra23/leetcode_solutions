@@ -179,6 +179,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3634-minimum-removals-to-balance-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/3634-minimum-removals-to-balance-array) |
 | [3637-trionic-array-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3637-trionic-array-i) |
 | [3640-trionic-array-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3640-trionic-array-ii) |
+| [3643-flip-square-submatrix-vertically](https://github.com/amolmishra23/leetcode_solutions/tree/master/3643-flip-square-submatrix-vertically) |
 | [3647-zero-array-transformation-iii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3647-zero-array-transformation-iii) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3652-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/amolmishra23/leetcode_solutions/tree/master/3652-best-time-to-buy-and-sell-stock-using-strategy) |
@@ -832,6 +833,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2392-successful-pairs-of-spells-and-potions](https://github.com/amolmishra23/leetcode_solutions/tree/master/2392-successful-pairs-of-spells-and-potions) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/amolmishra23/leetcode_solutions/tree/master/3437-maximum-total-damage-with-spell-casting) |
+| [3643-flip-square-submatrix-vertically](https://github.com/amolmishra23/leetcode_solutions/tree/master/3643-flip-square-submatrix-vertically) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Counting
 |  |
@@ -922,6 +924,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3567-minimum-absolute-difference-in-sliding-submatrix](https://github.com/amolmishra23/leetcode_solutions/tree/master/3567-minimum-absolute-difference-in-sliding-submatrix) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3643-flip-square-submatrix-vertically](https://github.com/amolmishra23/leetcode_solutions/tree/master/3643-flip-square-submatrix-vertically) |
 | [3651-minimum-cost-path-with-teleportations](https://github.com/amolmishra23/leetcode_solutions/tree/master/3651-minimum-cost-path-with-teleportations) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/amolmishra23/leetcode_solutions/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3748-sort-matrix-by-diagonals](https://github.com/amolmishra23/leetcode_solutions/tree/master/3748-sort-matrix-by-diagonals) |
