@@ -69,6 +69,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/amolmishra23/leetcode_solutions/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1895-largest-magic-square](https://github.com/amolmishra23/leetcode_solutions/tree/master/1895-largest-magic-square) |
 | [1975-maximum-matrix-sum](https://github.com/amolmishra23/leetcode_solutions/tree/master/1975-maximum-matrix-sum) |
 | [1980-find-unique-binary-string](https://github.com/amolmishra23/leetcode_solutions/tree/master/1980-find-unique-binary-string) |
@@ -913,6 +914,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1628-count-submatrices-with-all-ones](https://github.com/amolmishra23/leetcode_solutions/tree/master/1628-count-submatrices-with-all-ones) |
 | [1727-largest-submatrix-with-rearrangements](https://github.com/amolmishra23/leetcode_solutions/tree/master/1727-largest-submatrix-with-rearrangements) |
 | [1878-get-biggest-three-rhombus-sums-in-a-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/1878-get-biggest-three-rhombus-sums-in-a-grid) |
+| [1886-determine-whether-matrix-can-be-obtained-by-rotation](https://github.com/amolmishra23/leetcode_solutions/tree/master/1886-determine-whether-matrix-can-be-obtained-by-rotation) |
 | [1895-largest-magic-square](https://github.com/amolmishra23/leetcode_solutions/tree/master/1895-largest-magic-square) |
 | [1975-maximum-matrix-sum](https://github.com/amolmishra23/leetcode_solutions/tree/master/1975-maximum-matrix-sum) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/amolmishra23/leetcode_solutions/tree/master/2244-number-of-laser-beams-in-a-bank) |
