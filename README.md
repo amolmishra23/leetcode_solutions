@@ -119,6 +119,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/amolmishra23/leetcode_solutions/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1](https://github.com/amolmishra23/leetcode_solutions/tree/master/2753-minimum-number-of-operations-to-make-all-array-elements-equal-to-1) |
 | [2856-count-complete-subarrays-in-an-array](https://github.com/amolmishra23/leetcode_solutions/tree/master/2856-count-complete-subarrays-in-an-array) |
+| [2906-construct-product-matrix](https://github.com/amolmishra23/leetcode_solutions/tree/master/2906-construct-product-matrix) |
 | [2943-maximize-area-of-square-hole-in-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/2943-maximize-area-of-square-hole-in-grid) |
 | [2975-maximum-square-area-by-removing-fences-from-a-field](https://github.com/amolmishra23/leetcode_solutions/tree/master/2975-maximum-square-area-by-removing-fences-from-a-field) |
 | [2976-minimum-cost-to-convert-string-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/2976-minimum-cost-to-convert-string-i) |
@@ -783,6 +784,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2529-range-product-queries-of-powers](https://github.com/amolmishra23/leetcode_solutions/tree/master/2529-range-product-queries-of-powers) |
 | [2618-maximize-the-minimum-powered-city](https://github.com/amolmishra23/leetcode_solutions/tree/master/2618-maximize-the-minimum-powered-city) |
 | [2625-increment-submatrices-by-one](https://github.com/amolmishra23/leetcode_solutions/tree/master/2625-increment-submatrices-by-one) |
+| [2906-construct-product-matrix](https://github.com/amolmishra23/leetcode_solutions/tree/master/2906-construct-product-matrix) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3129-find-all-possible-stable-binary-arrays-i](https://github.com/amolmishra23/leetcode_solutions/tree/master/3129-find-all-possible-stable-binary-arrays-i) |
 | [3130-find-all-possible-stable-binary-arrays-ii](https://github.com/amolmishra23/leetcode_solutions/tree/master/3130-find-all-possible-stable-binary-arrays-ii) |
@@ -924,6 +926,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/amolmishra23/leetcode_solutions/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2435-paths-in-matrix-whose-sum-is-divisible-by-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/2435-paths-in-matrix-whose-sum-is-divisible-by-k) |
 | [2625-increment-submatrices-by-one](https://github.com/amolmishra23/leetcode_solutions/tree/master/2625-increment-submatrices-by-one) |
+| [2906-construct-product-matrix](https://github.com/amolmishra23/leetcode_solutions/tree/master/2906-construct-product-matrix) |
 | [3070-count-submatrices-with-top-left-element-and-sum-less-than-k](https://github.com/amolmishra23/leetcode_solutions/tree/master/3070-count-submatrices-with-top-left-element-and-sum-less-than-k) |
 | [3212-count-submatrices-with-equal-frequency-of-x-and-y](https://github.com/amolmishra23/leetcode_solutions/tree/master/3212-count-submatrices-with-equal-frequency-of-x-and-y) |
 | [3567-minimum-absolute-difference-in-sliding-submatrix](https://github.com/amolmishra23/leetcode_solutions/tree/master/3567-minimum-absolute-difference-in-sliding-submatrix) |
